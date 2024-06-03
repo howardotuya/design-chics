@@ -1,0 +1,27 @@
+[
+	{
+		"id": 1,
+		"name": "Home",
+		"href": "/"
+	},
+	{
+		"id": 2,
+		"name": "About us",
+		"href": "/about-us"
+	},
+	{
+		"id": 3,
+		"name": "Shop",
+		"href": "/shop"
+	},
+	{
+		"id": 4,
+		"name": "Contact",
+		"href": "/contact"
+	},
+	{
+		"id": 5,
+		"name": "Quizzes",
+		"href": "/quizzes"
+	}
+]
