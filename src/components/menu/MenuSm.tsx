@@ -1,24 +1,23 @@
 import React, { useState } from 'react'
+import Link from 'next/link'
+import Image from 'next/image'
+import { usePathname } from 'next/navigation'
+import { Menu, X } from 'lucide-react'
 import {
     DropdownMenu,
     DropdownMenuContent,
     DropdownMenuItem,
-    DropdownMenuLabel,
-    DropdownMenuSeparator,
     DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu"
 
-import links from './../links.json'
-import Link from 'next/link'
-import Image from 'next/image'
+
 import DesignLogoSM from '@/../public/svg/LogoSM.svg'
-import { Menu, X } from 'lucide-react'
-import { usePathname } from 'next/navigation'
+import links from './../links.json'
 
 const MenuSm = () => {
     const [isOpen, setIsOpen] = useState(false)
     const pathname = usePathname()
-    console.log(isOpen)
+   
     return (
         <div className='bg-[#232323] flex flex-row justify-between items-center p-5 rounded-lg'>
             <Image src={DesignLogoSM} alt={'Image Logo'} />
@@ -32,7 +31,6 @@ const MenuSm = () => {
                             <Link onClick={() => setIsOpen(false)} href={link.href}>
                                 {link.name}
                             </Link>
-
                         </DropdownMenuItem>)}
                         <button className='p-4 bg-[#9ADBE5] text-black font-bold  rounded-full w-full mb-2'>
                             {'Become a Partner'.toUpperCase()}
@@ -41,7 +39,6 @@ const MenuSm = () => {
                 </DropdownMenuContent>
             </DropdownMenu>
         </div>
-
     )
 }
 
