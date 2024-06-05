@@ -11,8 +11,8 @@ import {
 } from "@/components/ui/dropdown-menu"
 
 
-// import DesignLogoSM from '../../../public/svg/LogoSM.svg'
-import DesignLogoLg from '@/../public/svg/LogoLG.svg'
+import DesignLogoSM from '@/../public/svg/LogoSM.svg'
+
 import links from './../links.json'
 import Button from '../buttons/Button'
 
@@ -22,7 +22,7 @@ const MenuSm = () => {
     return (
         <div className='lg:hidden'>
             <div className='bg-[#232323] flex flex-row justify-between items-center p-5 rounded-lg'>
-                <Image src={DesignLogoLg} alt={'Image Logo'} />
+                <Image src={DesignLogoSM} alt={'Image Logo'} />
                 <DropdownMenu onOpenChange={(open) => setIsOpen(open)}>
                     <DropdownMenuTrigger className='' >
                         {isOpen ? <X /> : <Menu />}
