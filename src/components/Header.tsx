@@ -8,8 +8,12 @@ const Header = () => {
     const isLargeScreen = useMediaQuery({ query: '(min-width: 1102px)' })
 
     return (
-        <div className='py-[24px] md:py-10 px-[16px] md:px-20'>
-            {isLargeScreen ? <MenuLg /> : <MenuSm />}
+        <div className='container my-10 font-roc-grotesk font-thin'>
+            <>
+                {/* {isLargeScreen ? <MenuLg /> : <MenuSm />} */}
+                {/* <MenuLg /> */}
+                <MenuSm />
+            </>
         </div>
     )
 }

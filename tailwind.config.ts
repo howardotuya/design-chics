@@ -12,13 +12,22 @@ const config = {
   theme: {
     container: {
       center: true,
-      padding: "2rem",
       screens: {
         "2xl": "1400px",
       },
+      padding: '24px'
     },
     extend: {
+      fontFamily: {
+        'roc-grotesk': ['Roc Grotesk', 'sans-serif'],
+        'karla': ['Karla', 'sans-serif'], 
+      },
       colors: {
+        brandblack: '#0B0A0A',
+        brandGrey: '#393939',
+        brandLightGrey:'#0B0A0A33',
+        brandPurple: '#9291EB',
+        brandBlue: '#9ADBE5',
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
@@ -78,3 +87,4 @@ const config = {
 } satisfies Config
 
 export default config
+

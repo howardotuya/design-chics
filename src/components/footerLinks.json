@@ -1,0 +1,86 @@
+[
+	{
+		"id": 1,
+		"title": "Company",
+		"subtitle": [
+			{
+				"id": 1,
+				"title": "About us",
+				"href": "/about-us"
+			},
+			{
+				"id": 2,
+				"title": "Partner",
+				"href": "/partner"
+			}
+		]
+	},
+	{
+		"id": 2,
+		"title": "Community",
+		"subtitle": [
+			{
+				"id": 1,
+				"title": "Join Us",
+				"href": "/join-us"
+			},
+			{
+				"id": 2,
+				"title": "Blog",
+				"href": "/blog"
+			},
+			{
+				"id": 3,
+				"title": "Shop Merch",
+				"href": "/shop"
+			},
+			{
+				"id": 4,
+				"title": "Quiz",
+				"href": "/quiz"
+			}
+		]
+	},
+    {
+			"id": 3,
+			"title": "Support",
+			"subtitle": [
+				{
+					"id": 1,
+					"title": "Contact",
+					"href": "/contact"
+				},
+				{
+					"id": 2,
+					"title": "Feedback",
+					"href": "/feedback"
+				},
+				{
+					"id": 3,
+					"title": "Become a Partner",
+					"href": "/become-a-partner"
+				}
+			]
+		},
+        {
+					"id": 4,
+					"title": "Follow Us",
+					"subtitle": [
+						{
+							"id": 1,
+							"title": "Instagram",
+							"href": "/instagram"
+						},
+						{
+							"id": 2,
+							"title": "LinkedIn",
+							"href": "/linkedin"
+						},
+						{
+							"id": 3,
+							"title": "Twitter",
+							"href": "/twitter"
+						}
+					]
+				}
+]

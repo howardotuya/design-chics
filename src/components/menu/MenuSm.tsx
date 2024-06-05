@@ -13,11 +13,12 @@ import {
 
 import DesignLogoSM from '@/../public/svg/LogoSM.svg'
 import links from './../links.json'
+import Button from '../buttons/Button'
 
 const MenuSm = () => {
     const [isOpen, setIsOpen] = useState(false)
     const pathname = usePathname()
-   
+
     return (
         <div className='bg-[#232323] flex flex-row justify-between items-center p-5 rounded-lg'>
             <Image src={DesignLogoSM} alt={'Image Logo'} />
@@ -32,9 +33,12 @@ const MenuSm = () => {
                                 {link.name}
                             </Link>
                         </DropdownMenuItem>)}
-                        <button className='p-4 bg-[#9ADBE5] text-black font-bold  rounded-full w-full mb-2'>
-                            {'Become a Partner'.toUpperCase()}
-                        </button>
+                        <Button
+                            
+                            title='BECOME A PARTNER'
+                            // onClick={() => console.log('clicked')}
+                            className='bg-brandBlue '
+                        />
                     </div>
                 </DropdownMenuContent>
             </DropdownMenu>

@@ -1,6 +1,28 @@
-@tailwind base;
+  @tailwind base;
   @tailwind components;
   @tailwind utilities;
+
+  @font-face {
+  font-family: 'Roc Grotesk';
+  src: url('@/../../../public/fonts/roc-grotesk-font/Fontspring-DEMO-rocgrotesk-regular.otf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roc Grotesk';
+  src: url('@/../../../public/fonts/roc-grotesk-font/Fontspring-DEMO-rocgrotesk-bold.otf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+ @font-face {
+  font-family: 'Karla';
+  src: url('@/../../../public/fonts/Karla/static/Karla-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+} 
+
 
   @layer base {
     :root {
@@ -95,5 +117,6 @@ body {
     }
     body {
       @apply bg-background text-foreground;
+      font-family: 'font-karla'
     }
   }
