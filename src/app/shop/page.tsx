@@ -5,24 +5,38 @@ import {
     CardFooter,
     CardHeader,
 } from "@/components/ui/card"
-import Banner from '@/components/banner/Banner'
+
 
 import shirtSvg from '../../../public/images/shirt.svg'
-import GirlsSmiling from '../../../public/images/allGirls.svg'
 import Image from 'next/image'
-import Button from '@/components/buttons/Button'
 import Pointer from '@/components/Pointer'
+import SupportUsBanner from '@/components/banner/SupportUsBanner'
 
 
 const Shop = () => {
     return (
         <div >
             <div className='container'>
-                <Banner
+                <div className='my-10 lg:my-20 flex flex-col justify-center items-center relative '>
+                    <h1 className='flex flex-col text-[32.4px] md:text-6xl font-roc-grotesk font-bold  mb-5'>
+                        <span>Design Chics Merch:</span>
+                        <span>Rep Your Community</span>
+                    </h1>
+                    <p className='w-full md:w-2/5 text-center text-sm text-[#BABABA] font-karla font-normal leading-4'>
+                        We are providing African women in design with the resources and opportunities they need to grow and reach their full potential.
+                    </p>
+                    <Pointer
+                        bgColor='brandPurple'
+                        position='left'
+                        title='Design boldly, girl!'
+                        className='hidden lg:block bottom-8 right-30 lg:-bottom-2 lg:right-60 text-white'
+                    />
+                </div>
+                {/* <Banner
                     title='Design Chics Merch:
                     Rep Your Community'
                     subTitlte='Check out cool an amazing customized products curated with love from our community to you.'
-                />
+                /> */}
                 {/* list of shopping content */}
                 <div className='mt-10'>
                     {/* start card */}
@@ -60,41 +74,8 @@ const Shop = () => {
                 </div>
                 {/* end of card */}
                 {/* like to support us banner */}
-                <div className=' flex justify-center'>
-                    <div className='pt-16 w-full lg:w-4/12 '>
-                        <Banner
-                            title='Like To Support Us?'
-                            subTitlte='Support Design Chics Community to help us reach more African women in Design and invest in empowering more women.'
-                        />
-                        <div className='flex gap-2 my-2'>
-                            <Button title='DONATE' className='bg-brandBlack border border-brandBlue text-brandBlue text-xs' />
-                            <Button
-                                title='BECOME A PARTNER'
-                                // onClick={() => console.log('clicked')}
-                                className='bg-brandBlue  text-xs'
-                            />
-                        </div>
-                    </div>
-                </div>
+                <SupportUsBanner />
             </div>
-            <div className="relative mt-7  ">
-                <div className='w-full h-full md:h-[500px]'>
-                    <Image src={GirlsSmiling} alt='A group of happy girls' className="w-full h-full object-cover object-top" />
-                </div>
-                <Pointer
-                    bgColor='brandBlue'
-                    position='right'
-                    title='You GO girl!'
-                    className='bottom-48 left-80 text-black'
-                />
-                <Pointer
-                    bgColor='brandPurple'
-                    position='left'
-                    title='You’re simply FIRE!'
-                    className='bottom-32 right-40 text-white'
-                />
-            </div>
-
         </div>
     )
 }

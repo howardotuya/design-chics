@@ -9,7 +9,7 @@ interface IBanner{
 const Banner = ({ title, subTitlte }: IBanner) => {
   return (
       <div className='my-5 text-center'>
-          <h1 className='text-[32.4px] font-roc-grotesk font-bold leading-9 mb-5'>
+          <h1 className='text-[32.4px] lg:text-4xl font-roc-grotesk font-bold leading-9 mb-5'>
              {title}
           </h1>
           <p className='text-sm text-[#BABABA] font-karla font-thin leading-4'>

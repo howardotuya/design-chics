@@ -1,8 +1,12 @@
+import SupportUsBanner from '@/components/banner/SupportUsBanner'
 import React from 'react'
 
 const aboutUs = () => {
   return (
-    <div>aboutUs</div>
+    <div>aboutUs
+
+      <SupportUsBanner />
+    </div>
   )
 }
 

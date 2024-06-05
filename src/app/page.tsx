@@ -1,3 +1,4 @@
+import SupportUsBanner from "@/components/banner/SupportUsBanner";
 import Image from "next/image";
 
 export default function Home() {
@@ -5,6 +6,7 @@ export default function Home() {
 
     <main>
       <h1>Hello world</h1>
-      </main>
+      <SupportUsBanner />
+    </main>
   );
 }

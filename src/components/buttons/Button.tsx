@@ -2,7 +2,7 @@ import React from 'react'
 
 interface IButton {
   title: string,
-  className: string,
+  className?: string,
   // onClick: () => void
 }
 const Button = ({ title, className}: IButton) => {
