@@ -11,7 +11,7 @@ const Header = () => {
         <div className='container my-10 font-roc-grotesk font-thin'>
             <>
                 {/* {isLargeScreen ? <MenuLg /> : <MenuSm />} */}
-                {/* <MenuLg /> */}
+                <MenuLg />
                 <MenuSm />
             </>
         </div>
