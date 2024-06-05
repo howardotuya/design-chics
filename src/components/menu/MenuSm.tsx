@@ -11,7 +11,7 @@ import {
 } from "@/components/ui/dropdown-menu"
 
 
-import DesignLogoSM from '@/../public/svg/LogoSM.svg'
+import DesignLogoSM from '../../../public/svg/LogoSM.svg'
 import links from './../links.json'
 import Button from '../buttons/Button'
 
