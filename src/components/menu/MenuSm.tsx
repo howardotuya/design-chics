@@ -18,7 +18,6 @@ import Button from '../buttons/Button'
 const MenuSm = () => {
     const [isOpen, setIsOpen] = useState(false)
     const pathname = usePathname()
-
     return (
         <div className='bg-[#232323] flex flex-row justify-between items-center p-5 rounded-lg'>
             <Image src={DesignLogoSM} alt={'Image Logo'} />
