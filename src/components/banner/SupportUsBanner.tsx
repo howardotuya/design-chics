@@ -3,7 +3,6 @@ import Banner from './Banner'
 import Button from '../buttons/Button'
 import Image from 'next/image'
 
-import GirlsSmiling from '../../../public/images/allGirls.svg'
 import Pointer from '../Pointer'
 
 
@@ -29,7 +28,7 @@ const SupportUsBanner = () => {
 
             <div className="relative mt-7  ">
                 <div className='w-full h-full md:h-[500px]'>
-                    <Image src={GirlsSmiling} alt='A group of happy girls' className="w-full h-full object-cover object-top" />
+                    <Image src={'/images/allGirls.svg'}  fill={true} alt='A group of happy girls' className="w-full h-full object-cover object-top" />
                 </div>
                 <Pointer
                     bgColor='brandBlue'

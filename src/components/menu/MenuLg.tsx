@@ -3,7 +3,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { usePathname } from 'next/navigation'
 
-import DesignLogoLg from '@/../public/svg/LogoLG.svg'
+
 import links from './../links.json'
 
 const MenuLg = () => {
@@ -11,7 +11,7 @@ const MenuLg = () => {
     return (
         <div className='hidden lg:flex flex-row justify-between items-center'>
             {/* logo */}
-            <Image src={DesignLogoLg} alt={'Image Logo'} width={130} />
+            <Image src='/svg/LogoLG.svg' alt={'Image Logo'} width={120} height={100}/>
             {/* links */}
             <div className='flex flex-row md:space-x-2 p-4 bg-[#232323] rounded-full'>
                 {links.map(link => <Link
