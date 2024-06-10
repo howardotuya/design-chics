@@ -7,7 +7,7 @@ interface IButton {
 }
 const Button = ({ title, className}: IButton) => {
   return (
-    <button className={`w-full rounded-full text-center font-bold p-3 ${className}`} >
+    <button className={`w-full rounded-full text-center font-bold p-3 ${className} text-sm md:text-base`} >
       {title}
     </button>
   )

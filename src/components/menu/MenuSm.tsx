@@ -26,8 +26,8 @@ const MenuSm = () => {
                     <DropdownMenuTrigger className='' >
                         {isDropDownOpen ? <X /> : <Menu />}
                     </DropdownMenuTrigger>
-                    <DropdownMenuContent  className='w-screen bg-black text-white border-0  p-0'>
-                        <div className='mx-6  bg-[#232323] rounded-b-lg p-2'>
+                    <DropdownMenuContent  className=' mt-4 w-screen bg-black text-white border-0  p-0'>
+                        <div className='mx-6  bg-[#232323] rounded-b-lg px-2 py-5'>
                             {links.map(link => <div onClick={handleDropDownOpen} className={` p-3 ${pathname === link.href ? 'font-bold bg-[#2C2C2C]' : 'font-thin '} :hover:bg-[#2C2C2C]`} key={link.id}>
                                 <Link  href={link.href}>
                                     {link.name}
