@@ -20,7 +20,7 @@ const MenuSm = () => {
     return (
         <div className='lg:hidden'>
             <div className='bg-[#232323] flex flex-row justify-between items-center p-5 rounded-lg'>
-                <Image src='/svg/LogoLG.svg' alt={'Image Logo'} width={120} height={100} />
+                <Image src='/svg/LogoSM.svg' alt={'Image Logo'} width={120} height={100} />
                 <DropdownMenu onOpenChange={(open) => setIsOpen(open)}>
                     <DropdownMenuTrigger className='' >
                         {isOpen ? <X /> : <Menu />}
