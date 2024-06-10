@@ -27,7 +27,7 @@ const SupportUsBanner = () => {
             </div>
 
             <div className="relative mt-7  ">
-                <div className='w-full h-full md:h-[500px]'>
+                <div className='w-full h-[284px] md:h-[500px]'>
                     <Image src={'/images/allGirls.svg'}  fill={true} alt='A group of happy girls' className="w-full h-full object-cover object-top" />
                 </div>
                 <Pointer
