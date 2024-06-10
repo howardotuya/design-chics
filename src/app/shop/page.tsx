@@ -18,7 +18,7 @@ const Shop = () => {
         <div >
             <div className='container'>
                 <div className='my-10 lg:my-20 flex flex-col justify-center items-center relative '>
-                    <h1 className='flex flex-col text-[32.4px] md:text-6xl font-roc-grotesk font-bold  text-center mb-5'>
+                    <h1 className='flex flex-col text-[31px] md:text-6xl font-roc-grotesk font-bold  mb-5'>
                         <span>Design Chics Merch:</span>
                         <span>Rep Your Community</span>
                     </h1>
