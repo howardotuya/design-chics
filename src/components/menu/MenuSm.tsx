@@ -15,23 +15,24 @@ import links from './../links.json'
 import Button from '../buttons/Button'
 
 const MenuSm = () => {
-    const [isOpen, setIsOpen] = useState(false)
+    const [isDropDownOpen, setIsDropDownOpen] = useState(false)
+    const handleDropDownOpen = () => setIsDropDownOpen(!isDropDownOpen)
     const pathname = usePathname()
     return (
         <div className='lg:hidden'>
             <div className='bg-[#232323] flex flex-row justify-between items-center p-5 rounded-lg'>
-                <Image src='/svg/LogoSM.svg' alt={'Image Logo'} width={120} height={100} />
-                <DropdownMenu onOpenChange={(open) => setIsOpen(open)}>
+                <Image src='/svg/LogoLG.svg' alt={'Image Logo'} width={65} height={65} />
+                <DropdownMenu onOpenChange={handleDropDownOpen} open={isDropDownOpen}>
                     <DropdownMenuTrigger className='' >
-                        {isOpen ? <X /> : <Menu />}
+                        {isDropDownOpen ? <X /> : <Menu />}
                     </DropdownMenuTrigger>
                     <DropdownMenuContent  className='w-screen bg-black text-white border-0  p-0'>
                         <div className='mx-6  bg-[#232323] rounded-b-lg p-2'>
-                            {links.map(link => <DropdownMenuItem className={` p-3 ${pathname === link.href ? 'font-bold bg-[#2C2C2C]' : 'font-thin '} :hover:bg-[#2C2C2C]`} key={link.id}>
-                                <Link onClick={() => setIsOpen(false)} href={link.href}>
+                            {links.map(link => <div onClick={handleDropDownOpen} className={` p-3 ${pathname === link.href ? 'font-bold bg-[#2C2C2C]' : 'font-thin '} :hover:bg-[#2C2C2C]`} key={link.id}>
+                                <Link  href={link.href}>
                                     {link.name}
                                 </Link>
-                            </DropdownMenuItem>)}
+                            </div>)}
                             <Button
 
                                 title='BECOME A PARTNER'
