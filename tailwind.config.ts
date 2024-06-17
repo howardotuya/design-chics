@@ -15,7 +15,7 @@ const config = {
       screens: {
         "2xl": "1400px",
       },
-      padding: '24px'
+      padding: '2em'
     },
     extend: {
       fontFamily: {

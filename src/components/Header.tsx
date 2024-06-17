@@ -6,7 +6,7 @@ import MenuSm from './menu/MenuSm'
 
 const Header = () => {
     return (
-        <div className='container my-10 font-roc-grotesk font-thin'>
+        <div className='container relative my-10 font-roc-grotesk font-thin'>
             <>
                 <MenuLg />
                 <MenuSm />

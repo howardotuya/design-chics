@@ -1,86 +1,49 @@
 [
 	{
 		"id": 1,
-		"title": "Company",
+		"title": "Community",
 		"subtitle": [
 			{
 				"id": 1,
-				"title": "About us",
-				"href": "/about-us"
+				"title": "Become a member",
+				"href": "/become-a-member"
 			},
 			{
 				"id": 2,
-				"title": "Partner",
-				"href": "/partner"
+				"title": "Initiatives",
+				"href": "/initiatives"
+			},
+			{
+				"id": 3,
+				"title": "Events",
+				"href": "/events"
+			},
+			{
+				"id": 4,
+				"title": "Shop Merch",
+				"href": "/shop-merch"
 			}
 		]
 	},
 	{
 		"id": 2,
-		"title": "Community",
+		"title": "About Us",
 		"subtitle": [
 			{
 				"id": 1,
-				"title": "Join Us",
-				"href": "/join-us"
+				"title": "Meet the Team",
+				"href": "/meet-the-team"
 			},
 			{
 				"id": 2,
-				"title": "Blog",
-				"href": "/blog"
+				"title": "Partner With Us",
+				"href": "/partner-with-ws"
 			},
 			{
 				"id": 3,
-				"title": "Shop Merch",
-				"href": "/shop"
-			},
-			{
-				"id": 4,
-				"title": "Quiz",
-				"href": "/quiz"
+				"title": "Volunteer",
+				"href": "/volunteer"
 			}
 		]
-	},
-    {
-			"id": 3,
-			"title": "Support",
-			"subtitle": [
-				{
-					"id": 1,
-					"title": "Contact",
-					"href": "/contact"
-				},
-				{
-					"id": 2,
-					"title": "Feedback",
-					"href": "/feedback"
-				},
-				{
-					"id": 3,
-					"title": "Become a Partner",
-					"href": "/become-a-partner"
-				}
-			]
-		},
-        {
-					"id": 4,
-					"title": "Follow Us",
-					"subtitle": [
-						{
-							"id": 1,
-							"title": "Instagram",
-							"href": "/instagram"
-						},
-						{
-							"id": 2,
-							"title": "LinkedIn",
-							"href": "/linkedin"
-						},
-						{
-							"id": 3,
-							"title": "Twitter",
-							"href": "/twitter"
-						}
-					]
-				}
+	}
 ]
