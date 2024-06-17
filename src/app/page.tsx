@@ -18,7 +18,6 @@ export default function Home() {
           <div className="flex flex-col items-center justify-center text-center">
             <h1 className="font-roc-grotesk font-bold text-[43px] leading-[48px] lg:text-[86px] lg:leading-[94.6px]">Dont go on your </h1>
             <h1 className="font-roc-grotesk font-bold text-[43px] leading-[48px] lg:text-[86px] lg:leading-[94.6px]"><span className="text-[#9ADBE5]">design journey</span> alone</h1>
-            <Banner subTitlte="" />
             <p className="w-full md:w-3/5 text-center text-[#BABABA] font-karla text-[24px] leading-[33.6px]">We are providing African women in design with the resources and opportunities they need to grow and reach their full potential.</p>
           </div>
           <div className="flex justify-center my-20">
