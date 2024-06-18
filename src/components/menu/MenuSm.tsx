@@ -35,7 +35,7 @@ const MenuSm = () => {
                             </div>)}
                             <Button
 
-                                title='BECOME A PARTNER'
+                                title='support us'
                                 // onClick={() => console.log('clicked')}
                                 className='bg-brandBlue '
                             />

@@ -22,8 +22,8 @@ const MenuLg = () => {
                 </Link>)}
             </div>
             {/* become a partner */}
-            <button className='p-4 bg-brandBlue text-black font-bold  rounded-full'>
-                {'Become a Partner'.toUpperCase()}
+            <button className='p-4 bg-brandBlue text-black font-bold  rounded-full uppercase'>
+                support us
             </button>
         </div>
     )

@@ -15,7 +15,7 @@ const config = {
       screens: {
         "2xl": "1400px",
       },
-      padding: '2em'
+      padding: '1.5em'
     },
     extend: {
       fontFamily: {
@@ -28,6 +28,7 @@ const config = {
         brandLightGrey:'#0B0A0A33',
         brandPurple: '#9291EB',
         brandBlue: '#9ADBE5',
+        brandGreen: '#0E4A56',
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",

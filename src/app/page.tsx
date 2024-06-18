@@ -5,28 +5,148 @@ import Image from "next/image";
 
 import shirtSvg from '../../public/images/shirt.svg'
 import { styles } from "@/styles";
-import { BriefcaseBusiness, Laptop, MessagesSquare, Search, UsersRound } from "lucide-react";
+import { BriefcaseBusiness, CalendarDays, Check, Laptop, MessagesSquare, MoveDown, Search, UsersRound } from "lucide-react";
+import Pointer from "@/components/Pointer";
+import Button from "@/components/buttons/Button";
 
+import grid_users from '@/../public/images/grid_users.png'
 
 
 export default function Home() {
   return (
 
     <main>
-      <div className="bg-black py-20">
-        <div className="container">
-          <div className="flex flex-col items-center justify-center text-center">
+
+      <div className="bg-black relative py-20">
+        <div className="container relative">
+          <div className="flex flex-col items-center justify-center text-center relative ">
+            <Image src="/images/membercount.png" alt='' width={130} height={200} />
             <h1 className="font-roc-grotesk font-bold text-[43px] leading-[48px] lg:text-[86px] lg:leading-[94.6px]">Dont go on your </h1>
             <h1 className="font-roc-grotesk font-bold text-[43px] leading-[48px] lg:text-[86px] lg:leading-[94.6px]"><span className="text-[#9ADBE5]">design journey</span> alone</h1>
             <p className="w-full md:w-3/5 text-center text-[#BABABA] font-karla text-[24px] leading-[33.6px]">We are providing African women in design with the resources and opportunities they need to grow and reach their full potential.</p>
+            <Pointer
+              bgColor='brandBlue'
+              position='right'
+              title='You can shape the world with your designs'
+              className='hidden md:block bottom-40 left-12 md:-bottom-10 md:left-0 lg:-bottom-20 lg:left-30 text-black '
+            />
+            <Pointer
+              bgColor='brandPurple'
+              position='left'
+              title='Design boldly, girl!'
+              className='hidden md:block bottom-40 right-12 md:bottom-20 md:right-0 lg:bottom-20 lg:right-30 text-black'
+            />
+            {/* <Pointer
+              bgColor='brandGreen'
+              position='left'
+              title='Design boldly, girl!'
+              className='bottom-40 right-12 lg:bottom-20 lg:right-30 text-black bg-brandGreen'
+            /> */}
           </div>
-          <div className="flex justify-center my-20">
+
+
+          <div className=" flex justify-center my-10 lg:my-20 ">
+            <Image src="/images/arrowDown.png" alt='' width={65} height={120} />
+          </div>
+          <div className="flex justify-center my-10 lg:my-20">
+
             <div className="w-full lg:w-9/12 h-[100px] lg:h-[280px] relative ">
               <Image src={'/images/inspire_picture.png'} alt="" fill={true} />
             </div>
           </div>
+
         </div>
       </div>
+      {/* power or community */}
+      <div className="my-5 lg:my-20">
+        <div className="container grid grid-cols-1 lg:grid-cols-3 gap-5">
+          <div className="flex flex-col gap-3">
+            <h1 className="font-roc-grotesk font-bold text-[46px] leading-[50.6px]">The power of a <span className="text-[#9291EB]">community</span> rooting for each other</h1>
+            <p className="font-karla text-[20px] leading-[28px]">We are empowering women through collaboration and creativity. Different phases in your career? </p>
+            <button className='p-4 bg-brandBlue text-black font-bold  font-roc-grotesk rounded-full uppercase'>Join the community</button>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-3 col-span-2">
+            <div className="border p-5  inline-flex flex-col gap-4 rounded-lg">
+              <div>
+                <div className="bg-[#9291EB] rounded-full inline-block p-2">
+                  <Check />
+                </div>
+              </div>
+              <h1 className="text-[22px] font-roc-grotesk font-bold leading-[30.8px] text-white">
+                Newbie Designers
+              </h1>
+              <p className="text-[18px] font-karla leading-[25.2px] text-white">Start your design journey with us. Access mentorship and resources to launch your career.</p>
+            </div>
+            {/* ss */}
+            <div className="border p-5  inline-flex flex-col gap-4 rounded-lg">
+              <div>
+                <div className="bg-[#9291EB] rounded-full inline-block p-2">
+                  <Check />
+                </div>
+              </div>
+              <h1 className="text-[22px] font-roc-grotesk font-bold leading-[30.8px] text-white">
+                Junior Designers
+              </h1>
+              <p className="text-[18px] font-karla leading-[25.2px] text-white">Elevate your skills, network and thrive as a junior designer with us.</p>
+            </div>
+            {/* ss */}
+            <div className="border p-5  inline-flex flex-col gap-4 rounded-lg">
+              <div>
+                <div className="bg-[#9291EB] rounded-full inline-block p-2">
+                  <Check />
+                </div>
+              </div>
+              <h1 className="text-[22px] font-roc-grotesk font-bold leading-[30.8px] text-white">
+                Mid-Level Designers
+              </h1>
+              <p className="text-[18px] font-karla leading-[25.2px] text-white">Advance your career and refine your craft in our supportive community.</p>
+            </div>
+            {/* ss */}
+            <div className="border p-5  inline-flex flex-col gap-4 rounded-lg">
+              <div>
+                <div className="bg-[#9291EB] rounded-full inline-block p-2">
+                  <Check />
+                </div>
+              </div>
+              <h1 className="text-[22px] font-roc-grotesk font-bold leading-[30.8px] text-white">
+                Senior Designers
+              </h1>
+              <p className="text-[18px] font-karla leading-[25.2px] text-white">Leverage your expertise, mentor and connect with experienced peers in our design network.</p>
+            </div>
+            {/* ss */}
+          </div>
+
+        </div>
+      </div>
+      {/* brands */}
+
+      <div className="my-10 lg:my-20">
+        <div className="container">
+          <h1 className="font-bold font-roc-grotesk text-center text-[46px] leading-[50.6px]">Brands we ve <span className="text-[#9ADBE5]">partnered</span>  with</h1>
+          {/* <div className="flex justify-center gap-3">
+            <div className="bg-[#FDF8E8] p-4 rounded-full relative w-[150px] h-[90px]">
+              <Image src="/images/propel_banner.png" alt="" fill={true} />
+            </div>
+            <div className="bg-[#FDF8E8] p-4 rounded-full relative w-[150px] h-[90px]">
+              <Image src="/images/geneza_banner.png" alt="" fill={true} />
+            </div>
+            <div className="bg-[#FDF8E8] p-4 rounded-full relative w-[150px] h-[90px]">
+              <Image src="/images/learnable_banner.png" alt="" fill={true} />
+            </div>
+            <div className="bg-[#FDF8E8] p-4 rounded-full relative w-[150px] h-[90px]">
+              <Image src="/images/ud_banner.png" alt="" fill={true} />
+            </div>
+            <div className="bg-[#FDF8E8] p-4 rounded-full relative w-[150px] h-[90px]">
+              <Image src="/images/redwire_banner.png" alt="" fill={true} />
+            </div>
+            <div className="bg-[#FDF8E8] p-4 rounded-full relative w-[150px] h-[90px]">
+              <Image src="/images/blocathon_banner.png" alt="" fill={true} />
+            </div>
+          </div> */}
+        </div>
+      </div>
+      {/* stop */}
+      {/* why design chick */}
       <div className="bg-[#FDF8E8] py-20">
         <div className="container">
           <Banner title="Why Design Chics?"
@@ -71,7 +191,7 @@ export default function Home() {
             <div className="bg-[#0E4A56] p-5  inline-flex flex-col gap-4 rounded-lg">
               <div>
                 <div className="bg-[#9ADBE5] rounded-full inline-block p-2">
-                  <Search color='black' />
+                  <CalendarDays color="black" />
                 </div>
               </div>
               <h1 className="text-[22px] font-roc-grotesk font-bold leading-[30.8px] text-white">
@@ -114,7 +234,7 @@ export default function Home() {
             <p className="font-roc-grotesk  text-[16px] leading-[24px]">Join our thriving community and tap into the collective knowledge, inspiration, and support to amplify your success and creativity.</p>
           </div>
           {/* parent flex */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3 px-[24px] md:px-[48px] lg:px-[64px]">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4  gap-3 px-[24px] md:px-[48px] lg:px-[64px] ">
             <div className=" h-[600px] grid grid-rows-5 gap-3">
               <div className="bg-[#232323] hover:bg-[#0E4A56] row-span-2 rounded-lg p-3 flex flex-col justify-between">
                 <div>
@@ -188,16 +308,29 @@ export default function Home() {
                   As a supportive community, we thrive on active communication and networking within the community.
                 </p>
               </div>
-              <div className="h-full w-full relative bg-green-900 row-span-5 rounded-lg">
+              <div className="h-full w-full relative  row-span-5 rounded-lg">
                 <Image src="/images/team_with_love.png" alt="" fill={true} />
               </div>
 
             </div>
+           
+            {/*  */}
           </div>
-
-
+          <div className="mt-4 px-[24px] md:px-[48px] lg:px-[64px] ">
+            <div className="container  bg-[#232323]  w-full p-8 flex flex-col lg:flex-row   lg:items-start  justify-between rounded-lg ">
+              <div className="flex flex-col lg:flex-row items-center gap-3  w-full">
+                <Image src={grid_users} alt=""/>
+                <h1 className="font-karla font-bold text-[24px] leading-[28.8px]">Join over 750+ designers</h1>
+              </div>
+              <div>
+                <Button
+                  title='Join the community'
+                  className='bg-brandBlue  text-black uppercase font-roc-grotesk text-xs w-full'
+                />
+              </div>
+            </div>
+          </div>
         </div>
-
       </div>
       <div className=" bg-[#FFFCF5] text-black py-20 ">
         <div className="container  ">
@@ -223,7 +356,7 @@ export default function Home() {
           </div>
 
           <div>
-            <div className="flex flex-col lg:flex-row justify-center gap-4">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center gap-4">
               {Array.from([1, 2, 3]).map((el, i) => (
                 <Card key={i} className='relative bg-black text-white p-3'>
                   <CardHeader className='p-0 m-2'>
