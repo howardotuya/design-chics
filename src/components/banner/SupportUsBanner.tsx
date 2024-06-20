@@ -10,7 +10,7 @@ const SupportUsBanner = () => {
     return (
         <>
             <div className='container flex justify-center'>
-                <div className='pt-16 w-full lg:w-4/12 '>
+                <div className='pt-16 w-full lg:w-[600px] '>
                     <Banner
                         title='Like To Support Us?'
                         subTitlte='Support Design Chics Community to help us reach more African women in Design and invest in empowering more women.'
