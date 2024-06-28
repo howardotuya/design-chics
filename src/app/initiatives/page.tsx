@@ -6,7 +6,7 @@ const pages = () => {
     <div className="bg-[#0b0a0a] flex flex-row justify-center w-full">
       <div className="bg-[#0b0a0a] relative w-[1440px]">
 
-     
+     <h1>Hello world</h1>
         {/* <div className="absolute top-[506px] left-[93px] h-[67px] w-[385px] transform rotate-180">
           <div className="h-[62px] relative">
 
