@@ -22,7 +22,7 @@ const Quizzes = () => {
             Array.from([0, 0, 0, 0, 0, 0, 0, 0]).map((shop, i) => (
               <Card key={i} className='relative bg-[#232323] text-white border-0'>
                 <CardHeader className='p-0 m-4'>
-                  <div className='flex items-center bg-black rounded-lg h-48 md:h-60 w-full'>
+                  <div className='flex items-center rounded-lg h-48 md:h-60 w-full'>
                   </div>
                 </CardHeader>
                 <CardContent className='px-4 py-0 '>

@@ -51,7 +51,7 @@ const aboutUs = () => {
           </div>
         </div>
       </div>
-      <div className=' bg-black py-20'>
+      <div className='  py-20'>
         {/* team */}
         <div className='container'>
           <div className='flex flex-col lg:flex-row gap-3 justify-between text-[#FFFCF5] '>
@@ -82,7 +82,7 @@ const aboutUs = () => {
               <div className='relative h-[60px] w-[60px] lg:h-[200px] lg:w-[200px] '>
                 <Image src={advocate.image} fill={true} alt={`picture of advocate ${advocate.name}`} />
               </div>
-              <div className='absolute bottom-1 lg:bottom-4 bg-black text-white rounded-full py-1 px-2 left-1/2 transform -translate-x-1/2 m-auto'>
+              <div className='absolute bottom-1 lg:bottom-4  text-white rounded-full py-1 px-2 left-1/2 transform -translate-x-1/2 m-auto'>
                 <h1 className='font-roc-grotesk text-[4px] lg:text-[14px] leadin-[20px]'>         {advocate.name}</h1>
               </div>
             </div>)}

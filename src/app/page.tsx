@@ -1,119 +1,169 @@
-import Banner from "@/components/banner/Banner";
-import SupportUsBanner from "@/components/banner/SupportUsBanner";
-import { Card, CardContent, CardFooter, CardHeader } from "@/components/ui/card";
+import React from "react";
 import Image from "next/image";
-
-import shirtSvg from '../../public/images/shirt.svg'
 import { styles } from "@/styles";
-import { BriefcaseBusiness, CalendarDays, Check, Laptop, MessagesSquare, MoveDown, Search, UsersRound } from "lucide-react";
-import Pointer from "@/components/Pointer";
 import Button from "@/components/buttons/Button";
+import Pointer from "@/components/Pointer";
 
-import grid_users from '@/../public/images/grid_users.png'
 
-
-export default function Home() {
+const HomePage = () => {
   return (
-
     <main>
 
-      <div className="bg-black relative py-20">
+      <div className=" relative">
         <div className="container relative">
           <div className="flex flex-col items-center justify-center text-center relative ">
             <Image src="/images/membercount.png" alt='' width={130} height={200} />
-            <h1 className="font-roc-grotesk font-bold text-[43px] leading-[48px] lg:text-[86px] lg:leading-[94.6px]">Dont go on your </h1>
-            <h1 className="font-roc-grotesk font-bold text-[43px] leading-[48px] lg:text-[86px] lg:leading-[94.6px]"><span className="text-[#9ADBE5]">design journey</span> alone</h1>
-            <p className="w-full md:w-3/5 text-center text-[#BABABA] font-karla text-[24px] leading-[33.6px]">We are providing African women in design with the resources and opportunities they need to grow and reach their full potential.</p>
-            <Pointer
-              bgColor='brandBlue'
-              position='right'
-              title='You can shape the world with your designs'
-              className='hidden md:block bottom-40 left-12 md:-bottom-10 md:left-0 lg:-bottom-20 lg:left-30 text-black '
-            />
-            <Pointer
-              bgColor='brandPurple'
-              position='left'
-              title='Design boldly, girl!'
-              className='hidden md:block bottom-40 right-12 md:bottom-20 md:right-0 lg:bottom-20 lg:right-30 text-black'
-            />
-            {/* <Pointer
-              bgColor='brandGreen'
-              position='left'
-              title='Design boldly, girl!'
-              className='bottom-40 right-12 lg:bottom-20 lg:right-30 text-black bg-brandGreen'
-            /> */}
+            <div className=" left-0 inline-flex flex-col items-center gap-16  w-full">
+              <p className="text-transparent font-roc-grotesk font-helvetica text-[40px] lg:text-[86px] font-bold tracking-tight leading-95 leading-tight mt-1 relative text-center w-full ">
+                <span className="text-white font-helvetica tracking-tighter">Dont go on your</span>
+                <span className="span">
+                  {" "}
+                  <br />
+                </span>
+                <span className="text-blue-300 tracking-tighter">design journey</span>
+                <span className="span">&nbsp;</span>
+                <span className="text-white font-helvetica tracking-tighter">alone</span>
+              </p>
+              <p className="text-gray-400 font-karla font-helvetica text-base font-normal leading-42 leading-normal text-center lg:w-[785px]">
+                We are providing African women in design with the resources and opportunities they need to grow and reach
+                their full potential.
+              </p>
+            </div>
+            <div className=" hidden lg:block absolute top-[80px] right-[150px] h-[65px] w-[185px]">
+              <div className="relative h-60 top-5">
+                <div className="absolute top-12  bg-brandPurple rounded-full inline-flex items-center justify-center gap-2.5 px-5 py-3">
+                  <div className="relative text-white font-karla font-helvetica text-sm font-bold leading-5 tracking-normal whitespace-nowrap">Design boldly, girl!</div>
+                </div>
+                <Image className="absolute top-0 left-0 " width={20} height={70} alt="Vector" src="https://c.animaapp.com/unzonupS/img/vector.svg" />
+              </div>
+
+            </div>
+            <div className="hidden lg:block absolute top-[406px] left-0 h-[67px] w-[385px] transform rotate-180">
+              <div className="h-[62px] relative">
+                <div className="absolute top-0 left-8 bg-[#0e4a56] rounded-full inline-flex items-center justify-center gap-[11.28px] px-5 py-3">
+                  <p className="relative text-[#fffcf5] font-karla font-helvetica text-lg font-bold leading-[22.4px] mt-[-2.82px] whitespace-nowrap transform rotate-180 w-fit">You can shape the world with your designs</p>
+                </div>
+                <Image className="absolute top-[40px] left-0  transform -rotate-180" width={22} height={22} alt="Vector" src="https://c.animaapp.com/unzonupS/img/vector-1.svg" />
+              </div>
+            </div>
           </div>
 
-
-          <div className=" flex justify-center my-10 lg:my-20 ">
-            <Image src="/images/arrowDown.png" alt='' width={65} height={120} />
+          {/* down arrow */}
+          <div className=" flex justify-center my-10 lg:my-24  ">
+            <Image src="/images/arrowDown.png" className="animate-bounce" alt='' width={77} height={82} />
           </div>
-          <div className="flex justify-center my-10 lg:my-20">
-
-            <div className="w-full lg:w-9/12 h-[100px] lg:h-[280px] relative ">
-              <Image src={'/images/inspire_picture.png'} alt="" fill={true} />
+          <div className="flex items-center justify-center gap-10">
+            <div className="relative w-[200px] h-[200px] lg:h-[298px] lg:w-[306px]">
+              <Image fill={true} alt="Mask group" src="https://c.animaapp.com/unzonupS/img/mask-group@2x.png" />
+            </div>
+            <div className="relative w-[200px] h-[200px] xl:h-[306px] xl:w-[306px] flex items-center justify-center p-5 bg-brandGreen rounded-full overflow-hidden">
+              <div className="font-roc-grotesk font-helvetica text-[50px] font-bold tracking-[-0.51px] leading-[43.5px] text-center whitespace-nowrap">INSPIRE.</div>
+            </div>
+            <div className="relative w-[200px] h-[200px]   lg:h-[298px] lg:w-[306px]">
+              <Image fill={true} alt="Mask group" src="https://c.animaapp.com/unzonupS/img/mask-group-1@2x.png" />
             </div>
           </div>
 
         </div>
       </div>
       {/* power or community */}
-      <div className="my-5 lg:my-20">
-        <div className="container grid grid-cols-1 lg:grid-cols-3 gap-5">
+      <div className="my-10 lg:my-20">
+        <div className="container grid grid-cols-1 lg:grid-cols-2 gap-20">
           <div className="flex flex-col gap-3">
-            <h1 className="font-roc-grotesk font-bold text-[46px] leading-[50.6px]">The power of a <span className="text-[#9291EB]">community</span> rooting for each other</h1>
-            <p className="font-karla text-[20px] leading-[28px]">We are empowering women through collaboration and creativity. Different phases in your career? </p>
-            <button className='p-4 bg-brandBlue text-black font-bold  font-roc-grotesk rounded-full uppercase'>Join the community</button>
+            <div className="relative inline-flex flex-col items-start gap-[10px] flex-[0_0_auto]">
+              <p className="relative text-transparent font-roc-grotesk  font-helvetica text-[40px] lg:text-[46px] font-bold tracking-[0.02px] leading-[50.6px] mt-[-0.99px] w-[427px]">
+                <span className="text-[#fffcf5e6] tracking-[0.01px]">The power of a </span>
+                <span className="text-[#9291eb] tracking-[0.01px]">community</span>
+                <span className="text-[#fffcf5e6] tracking-[0.01px]"> rooting for each other</span>
+              </p>
+              <p className="relative text-[#bababa] font-karla font-helvetica text-[20px] font-normal leading-[28px] tracking-[0] ">
+                We are empowering women through collaboration and creativity. Different phases in your career?
+              </p>
+            </div>
+            <button className="relative flex items-center justify-center gap-[8.25px] bg-[#9291eb] rounded-[515.61px] box-border p-[18px_16px] w-[280px] flex-[0_0_auto] all-unset">
+              <div  className="relative font-roc-grotesk  font-helvetica text-[16px] font-bold tracking-[0] mt-[-1.03px] w-fit">JOIN THE COMMUNITY</div>
+            </button>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-3 col-span-2">
-            <div className="border p-5  inline-flex flex-col gap-4 rounded-lg">
-              <div>
-                <div className="bg-[#9291EB] rounded-full inline-block p-2">
-                  <Check />
+          <div className="relative flex flex-col   ">
+            <div className="h-[100px] lg:h-[517px] relative ">
+              <div className="absolute  top-0 lg:top-0 h-[200px] w-[200px]  lg:h-[517px] lg:w-[517px]" >
+                <Image src="https://c.animaapp.com/unzonupS/img/group-316124405.png" fill={true} alt='' />
+              </div>
+
+            </div>
+            <div className="relative lg:absolute w-full top-0 grid grid-cols-1 lg:grid-cols-2 gap-3 justify-end items-center ">
+              <div className="w-full  lg:w-[299px] relative inline-flex flex-col items-center justify-center gap-y-10 bg-[#0e0d0d] border border-solid border-[#e8e8e80d] rounded-[20px] p-[20px_40px]">
+                <div className="align-items-start inline-flex flex-none flex-col gap-y-10 relative">
+                  <div className="flex items-center h-12 w-28">
+                    <div className=" bg-[#9291eb] rounded-full h-12 w-12" />
+                  </div>
+                  <div className="relative inline-flex flex-col gap-y-5">
+                    <div className="relative text-[var(--x-2)] font-roc-grotesk font-helvetica text-[20px] font-bold tracking-[0] leading-[26px] mt-[-1px] whitespace-nowrap">Newbie Designers</div>
+                    <p className="relative text-[#fffcf5e6] font-karla font-helvetica text-[16px] font-normal leading-[22.4px] h-78 w-[251px]">
+                      Start your design journey with us. Access mentorship and resources to launch your career.
+                    </p>
+                  </div>
                 </div>
               </div>
-              <h1 className="text-[22px] font-roc-grotesk font-bold leading-[30.8px] text-white">
-                Newbie Designers
-              </h1>
-              <p className="text-[18px] font-karla leading-[25.2px] text-white">Start your design journey with us. Access mentorship and resources to launch your career.</p>
-            </div>
-            {/* ss */}
-            <div className="border p-5  inline-flex flex-col gap-4 rounded-lg">
-              <div>
-                <div className="bg-[#9291EB] rounded-full inline-block p-2">
-                  <Check />
+              <div className="w-full lg:w-[299px] relative inline-flex flex-col items-center justify-center gap-y-10 bg-[#0e0d0d] border border-solid border-[#e8e8e80d] rounded-[20px] p-[20px_40px] flex-[0_0_auto]">
+                <div className="align-items-start inline-flex flex-none flex-col gap-y-10 relative">
+                  <div className="relative h-12 w-28">
+                    <div className="relative h-12 w-16 ">
+                      <div className="relative h-12 w-12">
+                        <Image src={'./svg/round-wave.svg'} fill={true} alt=""/>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="relative inline-flex flex-col gap-y-5">
+                    <div className="relative text-[var(--x-2)] font-roc-grotesk font-helvetica text-[20px] font-bold tracking-[0] leading-[26px] mt-[-1px] whitespace-nowrap">Junior Designers</div>
+                    <p className="relative text-[#fffcf5e6] font-karla font-helvetica text-[16px] font-normal leading-[22.4px] h-78 w-[251px]">
+                      Elevate your skills, network <br />
+                      and thrive as a junior designer with us.
+                    </p>
+                  </div>
                 </div>
               </div>
-              <h1 className="text-[22px] font-roc-grotesk font-bold leading-[30.8px] text-white">
-                Junior Designers
-              </h1>
-              <p className="text-[18px] font-karla leading-[25.2px] text-white">Elevate your skills, network and thrive as a junior designer with us.</p>
-            </div>
-            {/* ss */}
-            <div className="border p-5  inline-flex flex-col gap-4 rounded-lg">
-              <div>
-                <div className="bg-[#9291EB] rounded-full inline-block p-2">
-                  <Check />
+              <div className="w-full lg:w-[299px] relative inline-flex flex-col items-center justify-center gap-y-10 bg-[#0e0d0d] border border-solid border-[#e8e8e80d] rounded-[20px] p-[20px_40px] flex-[0_0_auto]">
+                <div className="align-items-start inline-flex flex-none flex-col gap-y-10 relative">
+                  <div className="relative  w-28">
+                    <div className="relative h-12 top-8">
+                      <div className="relative h-12 w-28">
+                        <div className="absolute bg-[#9291eb] rounded-full h-[20px] w-[20px] top-0 left-0" />
+                        <div className="absolute bg-[#9291eb] rounded-full h-[20px] w-[20px] top-0 left-3" />
+                        <div className="absolute bg-[#9291eb] rounded-full h-[20px] w-[20px] top-0 left-5" />
+                      </div>
+                    </div>
+                  </div>
+                  <div className="relative inline-flex flex-col gap-y-5">
+                    <div className="relative text-[var(--x-2)] font-roc-grotesk font-helvetica text-[20px] font-bold tracking-[0] leading-[26px] mt-[-1px] whitespace-nowrap">Mid-Level Designers</div>
+                    <p className="relative text-[#fffcf5e6] font-karla font-helvetica text-[16px] font-normal leading-[22.4px] h-78 w-[251px]">
+                      Advance your career and <br />
+                      refine your craft in our supportive community.
+                    </p>
+                  </div>
                 </div>
               </div>
-              <h1 className="text-[22px] font-roc-grotesk font-bold leading-[30.8px] text-white">
-                Mid-Level Designers
-              </h1>
-              <p className="text-[18px] font-karla leading-[25.2px] text-white">Advance your career and refine your craft in our supportive community.</p>
-            </div>
-            {/* ss */}
-            <div className="border p-5  inline-flex flex-col gap-4 rounded-lg">
-              <div>
-                <div className="bg-[#9291EB] rounded-full inline-block p-2">
-                  <Check />
+              <div className="w-full lg:w-[299px] relative inline-flex flex-col items-center justify-center gap-y-[20.32px] bg-[#0e0d0d] border border-solid border-[#e8e8e80d] rounded-[20px] p-[20px_40px] flex-[0_0_auto]">
+                <div className="align-items-start inline-flex flex-none flex-col gap-y-10 relative">
+                  <div className="relative h-12 w-28">
+                    <div className="relative h-26 w-26 left-1 top-1">
+                      <div className="relative h-26">
+                        <div className="absolute bg-[#9291eb] rounded-full h-[20px] w-[20px] top-0 left-0" />
+                        <div className="absolute bg-[#9291eb] rounded-full h-[20px] w-[20px] top-0 left-4" />
+                        <div className="absolute bg-[#9291eb] rounded-full h-[20px] w-[20px] top-4 left-0" />
+                        <div className="absolute bg-[#9291eb] rounded-full h-[20px] w-[20px] top-4 left-4" />
+                      </div>
+                    </div>
+                  </div>
+                  <div className="relative inline-flex flex-col gap-y-5">
+                    <div className="relative text-[var(--x-2)] font-roc-grotesk font-helvetica text-[20px] font-bold tracking-[0] leading-[26px] mt-[-1px] whitespace-nowrap">Senior Designers</div>
+                    <p className="relative text-[#fffcf5e6] font-karla font-helvetica text-[16px] font-normal leading-[22.4px] h-78 w-[251px]">
+                      Leverage your expertise, mentor and connect with experienced peers in our design network.
+                    </p>
+                  </div>
                 </div>
               </div>
-              <h1 className="text-[22px] font-roc-grotesk font-bold leading-[30.8px] text-white">
-                Senior Designers
-              </h1>
-              <p className="text-[18px] font-karla leading-[25.2px] text-white">Leverage your expertise, mentor and connect with experienced peers in our design network.</p>
             </div>
-            {/* ss */}
           </div>
 
         </div>
@@ -147,7 +197,7 @@ export default function Home() {
       </div>
       {/* stop */}
       {/* why design chick */}
-      <div className="bg-[#FDF8E8] py-20">
+      {/* <div className="bg-[#FDF8E8] py-20">
         <div className="container">
           <Banner title="Why Design Chics?"
             subTitlte="Being a part of Design Chics Community gives you access to:"
@@ -176,8 +226,8 @@ export default function Home() {
                 Mentorship Programs
               </h1>
               <p className="text-[18px] font-karla leading-[25.2px] text-white">Receive personalized guidance as you navigate your design journey. </p>
-            </div>
-            <div className="bg-[#0E4A56] p-5  inline-flex flex-col gap-4 rounded-lg">
+            </div> */}
+      {/* <div className="bg-[#0E4A56] p-5  inline-flex flex-col gap-4 rounded-lg">
               <div>
                 <div className="bg-[#9ADBE5] rounded-full inline-block p-2">
                   <UsersRound color="black" />
@@ -223,8 +273,8 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </div>
-      <div className="bg-black py-20">
+      </div> */}
+      <div className=" py-20">
         <div className="">
           <div className="container grid grid-cols-1 lg:grid-cols-3 justify-between items-start gap-3 my-10 lg:my-20 ">
             <div className="flex flex-col gap-3 col-span-0 lg:col-span-2  ">
@@ -313,13 +363,13 @@ export default function Home() {
               </div>
 
             </div>
-           
+
             {/*  */}
           </div>
           <div className="mt-4 px-[24px] md:px-[48px] lg:px-[64px] ">
             <div className="container  bg-[#232323]  w-full p-8 flex flex-col lg:flex-row   lg:items-start  justify-between rounded-lg ">
               <div className="flex flex-col lg:flex-row items-center gap-3  w-full">
-                <Image src={grid_users} alt=""/>
+                {/* <Image src={grid_users} alt="" /> */}
                 <h1 className="font-karla font-bold text-[24px] leading-[28.8px]">Join over 750+ designers</h1>
               </div>
               <div>
@@ -345,7 +395,7 @@ export default function Home() {
         </div>
 
       </div>
-      <div className=" py-20 bg-white text-black ">
+      {/* <div className=" py-20 bg-white text-black ">
         <div className="container">
           <div className="flex flex-col items-center justify-center gap-5 mb-5 text-center">
             <h1 className={styles.h1Big}>Design Chics Merch: </h1>
@@ -353,12 +403,12 @@ export default function Home() {
             <button className='p-4 bg-brandBlue text-black font-bold  rounded-full mx-auto w-[280px]'>
               shop now
             </button>
-          </div>
+          </div> */}
 
-          <div>
+      {/* <div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center gap-4">
               {Array.from([1, 2, 3]).map((el, i) => (
-                <Card key={i} className='relative bg-black text-white p-3'>
+                <Card key={i} className='relative  text-white p-3'>
                   <CardHeader className='p-0 m-2'>
                     <div className='flex items-center bg-white rounded-lg h-50 md:h-60 w-full'>
                       <Image className='w-full h-full' src={shirtSvg} alt='' />
@@ -390,7 +440,11 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <SupportUsBanner />
+      <SupportUsBanner /> */}
     </main>
   );
-}
+};
+
+
+
+export default HomePage
