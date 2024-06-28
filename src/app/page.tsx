@@ -2,7 +2,9 @@ import React from "react";
 import Image from "next/image";
 import { styles } from "@/styles";
 import Button from "@/components/buttons/Button";
-import Pointer from "@/components/Pointer";
+import WhyDesignChickOne from "@/components/whyDesignChickOne";
+import SupportUsBanner from "@/components/banner/SupportUsBanner";
+
 
 
 const HomePage = () => {
@@ -31,8 +33,8 @@ const HomePage = () => {
             </div>
             <div className=" hidden lg:block absolute top-[80px] right-[150px] h-[65px] w-[185px]">
               <div className="relative h-60 top-5">
-                <div className="absolute top-12  bg-brandPurple rounded-full inline-flex items-center justify-center gap-2.5 px-5 py-3">
-                  <div className="relative text-white font-karla font-helvetica text-sm font-bold leading-5 tracking-normal whitespace-nowrap">Design boldly, girl!</div>
+                <div className="absolute top-4 left-8  bg-brandPurple rounded-full inline-flex items-center justify-center gap-2.5 px-5 py-3">
+                  <div className="relative  text-white font-karla font-helvetica text-sm font-bold leading-5 tracking-normal whitespace-nowrap">Design boldly, girl!</div>
                 </div>
                 <Image className="absolute top-0 left-0 " width={20} height={70} alt="Vector" src="https://c.animaapp.com/unzonupS/img/vector.svg" />
               </div>
@@ -81,7 +83,7 @@ const HomePage = () => {
               </p>
             </div>
             <button className="relative flex items-center justify-center gap-[8.25px] bg-[#9291eb] rounded-[515.61px] box-border p-[18px_16px] w-[280px] flex-[0_0_auto] all-unset">
-              <div  className="relative font-roc-grotesk  font-helvetica text-[16px] font-bold tracking-[0] mt-[-1.03px] w-fit">JOIN THE COMMUNITY</div>
+              <div className="relative font-roc-grotesk  font-helvetica text-[16px] font-bold tracking-[0] mt-[-1.03px] w-fit">JOIN THE COMMUNITY</div>
             </button>
           </div>
           <div className="relative flex flex-col   ">
@@ -110,7 +112,7 @@ const HomePage = () => {
                   <div className="relative h-12 w-28">
                     <div className="relative h-12 w-16 ">
                       <div className="relative h-12 w-12">
-                        <Image src={'./svg/round-wave.svg'} fill={true} alt=""/>
+                        <Image src={'./svg/round-wave.svg'} fill={true} alt="" />
                       </div>
                     </div>
                   </div>
@@ -170,31 +172,13 @@ const HomePage = () => {
       </div>
       {/* brands */}
 
-      <div className="my-10 lg:my-20">
-        <div className="container">
-          <h1 className="font-bold font-roc-grotesk text-center text-[46px] leading-[50.6px]">Brands we ve <span className="text-[#9ADBE5]">partnered</span>  with</h1>
-          {/* <div className="flex justify-center gap-3">
-            <div className="bg-[#FDF8E8] p-4 rounded-full relative w-[150px] h-[90px]">
-              <Image src="/images/propel_banner.png" alt="" fill={true} />
-            </div>
-            <div className="bg-[#FDF8E8] p-4 rounded-full relative w-[150px] h-[90px]">
-              <Image src="/images/geneza_banner.png" alt="" fill={true} />
-            </div>
-            <div className="bg-[#FDF8E8] p-4 rounded-full relative w-[150px] h-[90px]">
-              <Image src="/images/learnable_banner.png" alt="" fill={true} />
-            </div>
-            <div className="bg-[#FDF8E8] p-4 rounded-full relative w-[150px] h-[90px]">
-              <Image src="/images/ud_banner.png" alt="" fill={true} />
-            </div>
-            <div className="bg-[#FDF8E8] p-4 rounded-full relative w-[150px] h-[90px]">
-              <Image src="/images/redwire_banner.png" alt="" fill={true} />
-            </div>
-            <div className="bg-[#FDF8E8] p-4 rounded-full relative w-[150px] h-[90px]">
-              <Image src="/images/blocathon_banner.png" alt="" fill={true} />
-            </div>
-          </div> */}
-        </div>
+      <div className="my-10 ">
+        {/* <Brands /> */}
       </div>
+      <div className="p-2">
+        <WhyDesignChickOne/>
+      </div>
+
       {/* stop */}
       {/* why design chick */}
       {/* <div className="bg-[#FDF8E8] py-20">
@@ -441,6 +425,7 @@ const HomePage = () => {
         </div>
       </div>
       <SupportUsBanner /> */}
+      <SupportUsBanner /> 
     </main>
   );
 };
