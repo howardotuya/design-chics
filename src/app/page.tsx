@@ -4,6 +4,7 @@ import { styles } from "@/styles";
 import Button from "@/components/buttons/Button";
 import WhyDesignChickOne from "@/components/whyDesignChickOne";
 import SupportUsBanner from "@/components/banner/SupportUsBanner";
+import Brands from "@/components/Brands";
 
 
 
@@ -173,7 +174,7 @@ const HomePage = () => {
       {/* brands */}
 
       <div className="my-10 ">
-        {/* <Brands /> */}
+        <Brands />
       </div>
       <div className="p-2">
         <WhyDesignChickOne/>
