@@ -8,7 +8,7 @@ type props = {
         role: string,
         avatar: string,
         commentOne: string,
-        commentTwo: string
+        commentTwo?: string
     }
 }
 const CommunityCard = ({ comment }: props) => {
@@ -28,8 +28,8 @@ const CommunityCard = ({ comment }: props) => {
                 </div>
             </div>
             <div className="justify-start items-center gap-2.5 inline-flex">
-                <div className='bg-brandPurple p-1 rounded-full'>
-                    <Image width={50} height={50} className=" rounded-[594px] border-2 border-stone-200" alt='' src={avatar} />
+                <div className='bg-brandPurple p-0 rounded-full'>
+                    <Image width={50} height={50} className=" rounded-[594px]" alt='' src={avatar} />
                 </div>
                 <div className="flex-col justify-start items-start gap-0.5 inline-flex">
                     <div className="text-neutral-950 text-base font-bold font-['Roc Grotesk'] leading-tight">{name}</div>
