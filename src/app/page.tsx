@@ -1,8 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import { styles } from "@/styles";
-import Button from "@/components/buttons/Button";
-import WhyDesignChickOne from "@/components/whyDesignChickOne";
+import WhyDesignChick from "@/components/WhyDesignChick";
 import SupportUsBanner from "@/components/banner/SupportUsBanner";
 import Brands from "@/components/Brands";
 import InitiativesComponent from "@/components/InitiativesComponent";
@@ -41,7 +39,7 @@ const HomePage = () => {
             </div>
             <div className="hidden lg:block absolute top-[406px] left-20 h-[67px] w-[385px] transform rotate-180">
               <div className="h-[62px] relative">
-                <div className="absolute top-0 left-8 bg-[#0e4a56] rounded-full inline-flex items-center justify-center gap-[11.28px] px-5 py-3">
+                <div className="absolute top-0 left-8 bg-brandGreen rounded-full inline-flex items-center justify-center gap-[11.28px] px-5 py-3">
                   <p className="relative text-[#fffcf5] font-karla font-helvetica text-lg font-bold leading-[22.4px] mt-[-2.82px] whitespace-nowrap transform rotate-180 w-fit">You can shape the world with your designs</p>
                 </div>
                 <Image className="absolute top-[40px] left-0  transform -rotate-180" width={22} height={22} alt="Vector" src="https://c.animaapp.com/unzonupS/img/vector-1.svg" />
@@ -51,7 +49,7 @@ const HomePage = () => {
 
           {/* down arrow */}
           <div className=" flex justify-center my-10 lg:mt-56   ">
-            <Image src="/images/arrowDown.png"  alt='' width={77} height={82} />
+            <Image src="/images/arrowDown.png" alt='' width={77} height={82} />
           </div>
           <div className="flex items-center justify-center gap-14">
             <div className="relative w-[200px] h-[200px] lg:h-[298px] lg:w-[306px]">
@@ -74,14 +72,14 @@ const HomePage = () => {
             <div className="relative inline-flex flex-col items-start gap-[10px] flex-[0_0_auto]">
               <p className="relative text-transparent font-roc-grotesk  font-helvetica text-[40px] lg:text-[46px] font-bold tracking-[0.02px] leading-[50.6px] mt-[-0.99px] w-[427px]">
                 <span className="text-[#fffcf5e6] tracking-[0.01px]">The power of a </span>
-                <span className="text-[#9291eb] tracking-[0.01px]">community</span>
+                <span className="text-brandPurple tracking-[0.01px]">community</span>
                 <span className="text-[#fffcf5e6] tracking-[0.01px]"> rooting for each other</span>
               </p>
               <p className="relative text-[#bababa] font-karla font-helvetica text-[20px] font-normal leading-[28px] tracking-[0] ">
                 We are empowering women through collaboration and <br /> creativity. Different phases in your career?
               </p>
             </div>
-            <button className="relative flex items-center justify-center gap-[8.25px] bg-[#9291eb] rounded-[515.61px] box-border p-[18px_16px] w-[280px] flex-[0_0_auto] all-unset">
+            <button className="relative flex items-center justify-center gap-[8.25px] bg-brandPurple rounded-[515.61px] box-border p-[18px_16px] w-[280px] flex-[0_0_auto] all-unset">
               <div className="relative text-black font-roc-grotesk  font-helvetica text-[16px] font-bold tracking-[0] mt-[-1.03px] w-fit">JOIN THE COMMUNITY</div>
             </button>
           </div>
@@ -179,137 +177,12 @@ const HomePage = () => {
         <Brands />
       </div>
       <div className="">
-        <WhyDesignChickOne />
+        <WhyDesignChick />
       </div>
-      
 
-      {/* stop */}
-      {/* why design chick */}
-      {/* <div className="bg-[#FDF8E8] py-20">
-        <div className="container">
-          <Banner title="Why Design Chics?"
-            subTitlte="Being a part of Design Chics Community gives you access to:"
-            className="text-black"
-          />
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
-            <div className="bg-[#0E4A56] p-5  inline-flex flex-col gap-4 rounded-lg">
-              <div>
-                <div className="bg-[#9ADBE5] rounded-full inline-block p-2">
-                  <BriefcaseBusiness strokeWidth={2} color="black" />
+      <JoinTheCommunity />
+      <HearFromOurCommuniyt />
 
-                </div>
-              </div>
-              <h1 className="text-[22px] font-roc-grotesk font-bold leading-[30.8px] text-white">
-                Job Opportunities
-              </h1>
-              <p className="text-[18px] font-karla leading-[25.2px] text-white">Get access to shared job openings for Designers of every level. </p>
-            </div>
-            <div className="bg-[#0E4A56] p-5  inline-flex flex-col gap-4 rounded-lg">
-              <div>
-                <div className="bg-[#9ADBE5] rounded-full inline-block p-2">
-                  <MessagesSquare color="black" />
-                </div>
-              </div>
-              <h1 className="text-[22px] font-roc-grotesk font-bold leading-[30.8px] text-white">
-                Mentorship Programs
-              </h1>
-              <p className="text-[18px] font-karla leading-[25.2px] text-white">Receive personalized guidance as you navigate your design journey. </p>
-            </div> */}
-      {/* <div className="bg-[#0E4A56] p-5  inline-flex flex-col gap-4 rounded-lg">
-              <div>
-                <div className="bg-[#9ADBE5] rounded-full inline-block p-2">
-                  <UsersRound color="black" />
-                </div>
-              </div>
-              <h1 className="text-[22px] font-roc-grotesk font-bold leading-[30.8px] text-white">
-                DC Connect
-              </h1>
-              <p className="text-[18px] font-karla leading-[25.2px] text-white">Be a part of our virtual meetups held monthly & sometimes fortnightly! </p>
-            </div>
-            <div className="bg-[#0E4A56] p-5  inline-flex flex-col gap-4 rounded-lg">
-              <div>
-                <div className="bg-[#9ADBE5] rounded-full inline-block p-2">
-                  <CalendarDays color="black" />
-                </div>
-              </div>
-              <h1 className="text-[22px] font-roc-grotesk font-bold leading-[30.8px] text-white">
-                DC Online Events
-              </h1>
-              <p className="text-[18px] font-karla leading-[25.2px] text-white">Engage in helpful conversations, ask questions, and gain wisdom from industry experts.</p>
-            </div>
-            <div className="bg-[#0E4A56] p-5  inline-flex flex-col gap-4 rounded-lg">
-              <div>
-                <div className="bg-[#9ADBE5] rounded-full inline-block p-2">
-                  <Search color="black" />
-                </div>
-              </div>
-              <h1 className="text-[22px] font-roc-grotesk font-bold leading-[30.8px] text-white">
-                UX Roast
-              </h1>
-              <p className="text-[18px] font-karla leading-[25.2px] text-white">Dissect digital products as a community, explore and brainstorm innovative additions.</p>
-            </div>
-            <div className="bg-[#0E4A56] p-5  inline-flex flex-col gap-4 rounded-lg">
-              <div>
-                <div className="bg-[#9ADBE5] rounded-full inline-block p-2">
-                  <Laptop color="black" />
-                </div>
-              </div>
-              <h1 className="text-[22px] font-roc-grotesk font-bold leading-[30.8px] text-white">
-                Portfolio Reviews
-              </h1>
-              <p className="text-[18px] font-karla leading-[25.2px] text-white">Gain transformative insights and constructive feedback to enhance your portfolio.</p>
-            </div>
-          </div>
-        </div>
-      </div> */}
-      <JoinTheCommunity/>
-      <HearFromOurCommuniyt/>
-      {/* <div className=" py-20 bg-white text-black ">
-        <div className="container">
-          <div className="flex flex-col items-center justify-center gap-5 mb-5 text-center">
-            <h1 className={styles.h1Big}>Design Chics Merch: </h1>
-            <h1 className={styles.h1Big}>Rep Your Community </h1>
-            <button className='p-4 bg-brandBlue text-black font-bold  rounded-full mx-auto w-[280px]'>
-              shop now
-            </button>
-          </div> */}
-
-      {/* <div>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center gap-4">
-              {Array.from([1, 2, 3]).map((el, i) => (
-                <Card key={i} className='relative  text-white p-3'>
-                  <CardHeader className='p-0 m-2'>
-                    <div className='flex items-center bg-white rounded-lg h-50 md:h-60 w-full'>
-                      <Image className='w-full h-full' src={shirtSvg} alt='' />
-                      <p className='absolute top-7 right-7 w-10 p-1 text-black text-xs text-center  bg-brandBlue rounded-full'>New</p>
-                    </div>
-                  </CardHeader>
-                  <CardContent className='px-2 py-0 '>
-                    <p className='text-xs font-karla font-normal '>Star Girl Designer</p>
-                    <div className='flex flex-row items-center gap-1'>
-                      <p className='font-roc-grotesk font-bold text-xl items-center'>
-                        ₦8,000
-                      </p>
-                      <span className='text-xs text-brandPurple font-roc-grotesk font-bold'>-15%</span>
-                    </div>
-                  </CardContent>
-                  <CardFooter className='px-2 flex flex-col md:flex-row justify-between items-start font-karla font-normal'>
-                    <div className='text-xs md:text-sm'>
-                      <p className='text-brandLightGrey'>Available Color:</p>
-                      <p> White, Black, Army Green, Purple</p>
-                    </div>
-                    <div className='text-xs md:text-sm '>
-                      <p className='text-brandLightGrey'>Available Sizes:</p>
-                      <p> S  M  L  XL  XXL</p>
-                    </div>
-                  </CardFooter>
-                </Card>
-              ))}
-            </div>
-          </div>
-        </div>
-      </div>
-      <SupportUsBanner /> */}
       <InitiativesComponent />
       <SupportUsBanner />
     </main>

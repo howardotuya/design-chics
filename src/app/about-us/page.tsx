@@ -43,10 +43,10 @@ const aboutUs = () => {
             <div className='grid grid-cols-1 md:grid-cols-4 gap-3 my-8'>
               {values.map(value => <div key={value.id} className='bg-white py-3 px-5 rounded-full gap-3 flex items-center'>
                 <div className='p-2 bg-[#9ADBE5] rounded-full'>
-                  <Image src={value.logo} alt='' height={39} width={39}/>
+                  <Image src={value.logo} alt='' height={39} width={39} />
                 </div>
-                <p className='font-roc-grotesk font-semibold text-[18px] leading-[25px]'>{value.name }</p>
-              </div> )}
+                <p className='font-roc-grotesk font-semibold text-[18px] leading-[25px]'>{value.name}</p>
+              </div>)}
             </div>
           </div>
         </div>
@@ -65,7 +65,7 @@ const aboutUs = () => {
               </div>
               <div className='absolute bottom-3 py-2 left-1/2 transform -translate-x-1/2 m-auto h-[50px] bg-brandPurple w-9/12  text-center rounded-lg'>
                 <h1 className='font-roc-grotesk font-extrabold text-[16px] leading-[23px]'>{team.name}</h1>
-                <p className='font-roc-grotesk font-medium text-[14px] text-[#0B0A0A] leading-[20px]'>{team.position}</p>
+                <p className='font-roc-grotesk font-medium text-[14px] text-brandblack leading-[20px]'>{team.position}</p>
               </div>
             </div>)}
           </div>

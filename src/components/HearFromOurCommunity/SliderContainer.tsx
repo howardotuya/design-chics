@@ -11,14 +11,10 @@ const SliderContainer = () => {
 
         <div className="flex-col justify-start items-center flex">
             <div className="w-[1420px] relative">
-
                 <CommentCarousel ref={ref} />
             </div>
         <SliderControl sliderRef={ref}/>
-
         </div>
-
-  
     )
 }
 

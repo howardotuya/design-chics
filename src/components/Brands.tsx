@@ -3,7 +3,7 @@ import React from 'react'
 
 const Brands = () => {
     return (
-        <div className=" left-[-1px] flex flex-col items-center gap-10 bg-[#0b0a0a] p-[100px_0_150px] w-[1440px]">
+        <div className=" left-[-1px] flex flex-col items-center gap-10 bg-brandblack p-[100px_0_150px] w-[1440px]">
             <div className="relative inline-flex flex-col items-center gap-[15px]">
                 <p className="relative text-transparent font-roc-grotesk text-[46px] font-bold tracking-[0.02px] leading-[50.6px] -mt-[1px] text-center w-[693.38px]">
                     <span className="text-[#fffcf5e6]">Brands we ve </span>
