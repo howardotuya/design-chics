@@ -18,6 +18,9 @@ const config = {
       padding: '1.5em'
     },
     extend: {
+         zIndex: {
+        '999': '999',
+      },
       fontFamily: {
         'roc-grotesk': ['Roc Grotesk', 'sans-serif'],
         'karla': ['Karla', 'sans-serif'], 

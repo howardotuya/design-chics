@@ -3,13 +3,13 @@ import React from 'react'
 
 const WhyDesignChickOne = () => {
   return (
-      <div className=" flex flex-col items-center gap-[60px] bg-[#9adbe5] rounded-[40px] p-[120px_0] ">
+      <div className=" flex flex-col items-center gap-[60px] bg-[#9adbe5] mx-[10px] rounded-[40px] p-[120px_0] ">
           <div className="relative inline-flex flex-col items-center gap-[15px]">
               <div className="relative text-[#0b0a0a] font-roc-grotesk text-[40px] lg:text-[46px] font-bold tracking-[0.02px] leading-[50.6px] -mt-[1px] text-center lg:whitespace-nowrap">Why Design Chics?</div>
               <p className="text-wrapper-37 relative text-[#0b0a0a] font-karla text-[16px] lg:text-[20px] font-normal leading-[28px] text-center lg:whitespace-nowrap">Being a part of Design Chics Community gives you access to:</p>
           </div>
-          <div className="relative flex flex-col lg:flex-row flex-wrap justify-between items-start gap-[25px_15px] lg:w-[1130px]">
-              <div className="relative bg-[#fdf8e8] rounded-[25px] h-[182px] overflow-hidden w-[360px]">
+          <div className="relative grid grid-cols-3  justify-between  gap-5 lg:w-[1241px]">
+              <div className="relative bg-[#fdf8e8] rounded-[25px] h-[182px] overflow-hidden w-[397px]">
                   <div className="relative inline-flex flex-col items-start gap-[18px] top-[25px] left-[25px]">
                       <Image className="relative"  height={36} width={36} alt="Fi" src="https://c.animaapp.com/unzonupS/img/fi-3357526.svg" />
                       <div className="relative inline-flex flex-col items-start gap-[8px]">
@@ -21,7 +21,7 @@ const WhyDesignChickOne = () => {
                       </div>
                   </div>
               </div>
-              <div className="relative bg-[#fdf8e8] rounded-[25px] h-[182px] overflow-hidden w-[360px]">
+              <div className="relative bg-[#fdf8e8] rounded-[25px] h-[182px] overflow-hidden w-[397px]">
                   <div className="relative inline-flex flex-col items-start gap-[18px] top-[25px] left-[25px]">
                       <Image className="relative"  height={36} width={36} alt="Fi" src="https://c.animaapp.com/unzonupS/img/fi-1570696.svg" />
                       <div className="relative inline-flex flex-col items-start gap-[8px]">
@@ -30,7 +30,7 @@ const WhyDesignChickOne = () => {
                       </div>
                   </div>
               </div>
-              <div className="relative bg-[#fdf8e8] rounded-[25px] h-[182px] overflow-hidden w-[360px]">
+              <div className="relative bg-[#fdf8e8] rounded-[25px] h-[182px] overflow-hidden w-[397px]">
                   <div className="relative inline-flex flex-col items-start gap-[18px] top-[25px] left-[25px]">
                       <Image className="relative"  height={36} width={36} alt="Fi" src="https://c.animaapp.com/unzonupS/img/fi-4140320.svg" />
                       <div className="relative inline-flex flex-col items-start gap-[8px]">
@@ -42,7 +42,7 @@ const WhyDesignChickOne = () => {
                       </div>
                   </div>
               </div>
-              <div className="relative bg-[#fdf8e8] rounded-[25px] h-[182px] overflow-hidden w-[360px]">
+              <div className="relative bg-[#fdf8e8] rounded-[25px] h-[182px] overflow-hidden w-[397px]">
                   <div className="relative inline-flex flex-col items-start gap-[18px] top-[25px] left-[25px]">
                       <Image className="relative"  height={36} width={36} alt="Fi" src="https://c.animaapp.com/unzonupS/img/fi-5602981.svg" />
                       <div className="relative inline-flex flex-col items-start gap-[8px]">
@@ -51,7 +51,7 @@ const WhyDesignChickOne = () => {
                       </div>
                   </div>
               </div>
-              <div className="relative bg-[#fdf8e8] rounded-[25px] h-[182px] overflow-hidden w-[360px]">
+              <div className="relative bg-[#fdf8e8] rounded-[25px] h-[182px] overflow-hidden w-[397px]">
                   <div className="relative inline-flex flex-col items-start gap-[18px] top-[25px] left-[25px]">
                       <Image className="relative"  height={36} width={36} alt="Fi" src="https://c.animaapp.com/unzonupS/img/fi-2344334.svg" />
                       <div className="relative inline-flex flex-col items-start gap-[8px]">
@@ -62,7 +62,7 @@ const WhyDesignChickOne = () => {
                       </div>
                   </div>
               </div>
-              <div className="relative bg-[#fdf8e8] rounded-[25px] h-[182px] overflow-hidden w-[360px]">
+              <div className="relative bg-[#fdf8e8] rounded-[25px] h-[182px] overflow-hidden w-[397px]">
                   <div className="relative inline-flex flex-col items-start gap-[18px] top-[25px] left-[25px]">
                       <Image className="relative"  height={36} width={36} alt="Fi" src="https://c.animaapp.com/unzonupS/img/fi-2343797.svg" />
                       <div className="relative inline-flex flex-col items-start gap-[8px]">
