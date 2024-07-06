@@ -38,7 +38,14 @@ const JoinTheCommunity = () => {
             </div>
             {/* row 2 */}
             <div>
-              <img src="/images/team_at_event.png" className="w-full" alt="" />
+              <Image
+                src="/images/team_at_event.png"
+                unoptimized
+                className="w-full"
+                width={0}
+                height={0}
+                alt=""
+              />
             </div>
             {/* row 3 */}
             <div className="bg-[#232323] rounded-xl p-4">
@@ -79,7 +86,10 @@ const JoinTheCommunity = () => {
           {/* col 3 */}
           <div className="flex flex-col gap-3 w-full sm:w-[50%] md:w-[50%] lg:w-1/4">
             {/* row 1 */}
-            <img
+            <Image
+              unoptimized
+              width={0}
+              height={0}
               className="w-full"
               src="/images/team_meeting_view.png"
               alt=""
@@ -117,14 +127,27 @@ const JoinTheCommunity = () => {
             </div>
             {/* row 1 */}
             <div>
-              <img className="w-full" src="/images/team_with_love.png" alt="" />
+              <Image
+                unoptimized
+                width={0}
+                height={0}
+                className="w-full"
+                src="/images/team_with_love.png"
+                alt=""
+              />
             </div>
           </div>
         </div>
 
         <div className="w-full bg-[#232323] rounded-[20px] p-3 gap-3 flex flex-col md:flex-row md:justify-between md:items-center">
           <div className="flex flex-col md:flex-row gap-3 md:items-center">
-            <img className="h-[60px]" src="./images/grid_users.png" />
+            <Image
+              unoptimized
+              width={269}
+              height={60}
+              src="./images/grid_users.png"
+              alt=""
+            />
             <div>
               <span className="text-white text-2xl font-normal font-karla leading-[28.80px]">
                 Join over{" "}

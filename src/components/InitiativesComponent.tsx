@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 const InitiativesComponent = () => {
@@ -105,11 +106,18 @@ const InitiativesComponent = () => {
           </div>
         </div>
         <div className="w-full lg:justify-center gap-[22px] flex flex-col lg:flex-row">
-          {items.map((item) => (
-            <div className="space-y-5 w-full lg:w-1/2 bg-neutral-800 rounded-[25px] p-5 md:p-10">
-              <img
+          {items.map((item, index) => (
+            <div
+              key={index}
+              className="space-y-5 w-full lg:w-1/2 bg-neutral-800 rounded-[25px] p-5 md:p-10"
+            >
+              <Image
+                width={0}
+                height={0}
                 className="w-full left-0 top-0 rounded-lg"
                 src={item.thumbnail}
+                alt=""
+                unoptimized
               />
               <div className="text-stone-50/opacity-90 text-4xl font-bold font-roc-grotesk tracking-tight">
                 {item.title}

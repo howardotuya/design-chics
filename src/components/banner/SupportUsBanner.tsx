@@ -63,8 +63,11 @@ const SupportUsBanner = () => {
             />
           </div>
         </div>
-        <img
-          width={"100%"}
+        <Image
+          unoptimized
+          width={0}
+          height={0}
+          className="w-full"
           alt="Vector"
           src="https://c.animaapp.com/unzonupS/img/491-removebg-2.png"
         />
