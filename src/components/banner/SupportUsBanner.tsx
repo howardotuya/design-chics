@@ -16,13 +16,13 @@ const SupportUsBanner = () => {
           </p>
         </div>
         <div className="relative flex flex-col sm:flex-row justify-center items-start gap-[30px] w-full">
-          <button className="relativeflex items-center justify-center gap-[8.25px] border-2 border-[#9adbe5] rounded-full p-[18px_16px] w-full lg:w-[280px]">
-            <span className="relative text-[#9adbe5] font-roc-grotesk text-[16px] font-bold -mt-[2px]">
+          <button className="slide relative border-2 border-[#9adbe5] rounded-full px-[18px] py-[16px] w-full lg:w-[280px]">
+            <span className="text relative text-[#9adbe5] font-roc-grotesk text-[16px] font-bold">
               DONATE
             </span>
           </button>
-          <button className="flex items-center justify-center bg-[#9adbe5] text-black rounded-full box-border gap-[8.25px] p-[18px_16px] relative w-full lg:w-[280px]">
-            <span className="relative mt-[-1.03px]  font-roc-grotesk text-[16px] font-bold leading-normal w-fit">
+          <button className="slide  bg-[#9adbe5] text-black rounded-full box-border gap-[8.25px] p-[18px_16px] relative w-full lg:w-[280px]">
+            <span className="text relative   font-roc-grotesk text-[16px] font-bold leading-normal w-fit">
               BECOME A PARTNER
             </span>
           </button>

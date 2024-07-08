@@ -99,11 +99,11 @@ const InitiativesComponent = () => {
               </span>
             </div>
           </div>
-          <div className="w-[280px] px-4 py-[18px] bg-indigo-400 rounded-[515.61px] justify-center items-center gap-[8.25px] inline-flex">
-            <div className="w-[174px] text-center text-neutral-950 text-base font-bold font-roc-grotesk uppercase">
+          <button className="slide w-[280px] px-4 py-[18px] bg-indigo-400 rounded-[515.61px] justify-center items-center gap-[8.25px] inline-flex">
+            <span className="text w-[174px] text-center text-neutral-950 text-base font-bold font-roc-grotesk uppercase">
               View All Initiatives
-            </div>
-          </div>
+            </span>
+          </button>
         </div>
         <div className="w-full lg:justify-center gap-[22px] flex flex-col lg:flex-row">
           {items.map((item, index) => (

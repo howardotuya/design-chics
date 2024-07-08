@@ -1,7 +1,31 @@
 import Image from "next/image";
 import React from "react";
+import { FaXTwitter, FaInstagram, FaLinkedin } from "react-icons/fa6";
+import { BiLogoGmail } from "react-icons/bi";
 
 const JoinTheCommunity = () => {
+  const socials = [
+    {
+      name: "twitter",
+      icon: <FaXTwitter size={42} />,
+      link: "",
+    },
+    {
+      name: "instagram",
+      icon: <FaInstagram size={42} />,
+      link: "",
+    },
+    {
+      name: "linkedin",
+      icon: <FaLinkedin size={42} />,
+      link: "",
+    },
+    {
+      name: "gmail",
+      icon: <BiLogoGmail size={42} />,
+      link: "",
+    },
+  ];
   return (
     <div className="container mx-auto py-20 lg:py-40">
       <div className="justify-between items-start md:items-center flex flex-col md:flex-row mb-5 md:mb-10">
@@ -48,14 +72,17 @@ const JoinTheCommunity = () => {
               />
             </div>
             {/* row 3 */}
-            <div className="bg-[#232323] rounded-xl p-4">
-              <h1>30+</h1>
-              <p>DC Online Events</p>
-              <p>
-                Join our lively Twitter & Instagram sessions, where we invite
-                leading female designers to share their insights on various
-                captivating topics.
-              </p>
+            <div className="h-full rounded-xl grid grid-cols-2 gap-3">
+              {socials.map((item) => (
+                <a
+                  target="_blank"
+                  href={item.link}
+                  key={item.name}
+                  className="bg-[#232323] hover:bg-[#9ADBE5] slide hover:text-black cursor-pointer rounded-2xl h-[100px] flex items-center justify-center"
+                >
+                  <span className="text"> {item.icon}</span>
+                </a>
+              ))}
             </div>
           </div>
           {/* col 2 */}
@@ -161,8 +188,8 @@ const JoinTheCommunity = () => {
               </span>
             </div>
           </div>
-          <button className="bg-[#9ADBE5] h-[56px] rounded-full px-10 text-center text-neutral-950 text-base font-bold font-roc-grotesk uppercase tracking-tight">
-            Join the community
+          <button className="slide bg-[#9ADBE5] h-[56px] rounded-full px-10 text-center text-neutral-950 text-base font-bold font-roc-grotesk uppercase tracking-tight">
+            <span className="text"> Join the community</span>
           </button>
         </div>
       </div>
