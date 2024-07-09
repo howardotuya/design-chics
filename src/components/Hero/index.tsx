@@ -12,7 +12,7 @@ const Hero = () => {
           750+ MEMBERS
         </p>
       </div>
-      <h1 className="text-[43px] md:text-[86px] font-bold font-roc-grotesk text-center leading-tight md:leading-[94.60px]">
+      <h1 className="text-[43px] md:text-[86px] font-black font-roc-grotesk text-center leading-tight md:leading-[94.60px]">
         Don't go on your <br className="hidden sm:block" />
         <span className="text-brandBlue">design journey</span> alone
       </h1>

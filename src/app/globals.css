@@ -4,7 +4,7 @@
 
 @font-face {
   font-family: "Roc Grotesk";
-  src: url("@/../../../public/fonts/roc-grotesk-font/Fontspring-DEMO-rocgrotesk-regular.otf")
+  src: url("@/../../../public/fonts/roc-grotesk-font/Roc\ Grotesk\ Regular.ttf")
     format("truetype");
   font-weight: normal;
   font-style: normal;
@@ -12,7 +12,15 @@
 
 @font-face {
   font-family: "Roc Grotesk";
-  src: url("@/../../../public/fonts/roc-grotesk-font/Fontspring-DEMO-rocgrotesk-bold.otf")
+  src: url("@/../../../public/fonts/roc-grotesk-font/Roc\ Grotesk\ Medium.ttf")
+    format("truetype");
+  font-weight: semibold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roc Grotesk";
+  src: url("@/../../../public/fonts/roc-grotesk-font/Roc\ Grotesk\ Bold.ttf")
     format("truetype");
   font-weight: bold;
   font-style: normal;
@@ -124,31 +132,120 @@ body {
   }
 }
 
-/* slide solid button primary */
-.slide {
+/* to-purple*/
+.to-purple {
   position: relative;
   overflow: hidden;
 }
 
-.slide::before {
+.to-purple::before {
   content: "";
   position: absolute;
   top: 0;
   left: 0;
   width: 130%;
   height: 100%;
-  background-color: rgb(11, 200, 228);
-  transform: translate(-110%, 0) skew(-30deg);
+  background-color: #9291eb;
+  transform: translate(-110%, 0);
+  opacity: 0;
   transition: 0.5s;
   border-radius: inherit;
 }
 
-.slide:hover .text {
+/* .to-purple:hover .text {
+  color: #fff;
+} */
+
+.to-purple:hover::before {
+  transform: translate(-0%, 0);
+  opacity: 1;
+}
+
+/* to-blue*/
+.to-blue {
+  position: relative;
+  overflow: hidden;
+}
+
+.to-blue::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 130%;
+  height: 100%;
+  background-color: #9adbe5;
+  transform: translate(-110%, 0);
+  opacity: 0;
+  transition: 0.5s;
+  border-radius: inherit;
+}
+
+.to-blue:hover .text {
+  color: #000;
+}
+
+.to-blue:hover::before {
+  transform: translate(-0%, 0);
+  opacity: 1;
+}
+
+/* to-milk*/
+.to-milk {
+  position: relative;
+  overflow: hidden;
+}
+
+.to-milk::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 130%;
+  height: 100%;
+  background-color: #fdf8e8;
+  transform: translate(-110%, 0);
+  opacity: 0;
+  transition: 0.5s;
+  border-radius: inherit;
+}
+
+.to-milk:hover .text {
+  color: #000;
+}
+
+.to-milk:hover::before {
+  transform: translate(-0%, 0);
+  opacity: 1;
+}
+
+/* to-deepteal*/
+.to-deepteal {
+  position: relative;
+  overflow: hidden;
+}
+
+.to-deepteal::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 130%;
+  height: 100%;
+  background-color: #0e4a56;
+  transform: translate(-110%, 0);
+  opacity: 0;
+  transition: 0.5s;
+  border-radius: inherit;
+}
+
+.to-deepteal:hover .text {
   color: #fff;
 }
 
-.slide:hover::before {
-  transform: translate(-5%, 0) skew(-15deg);
+.to-deepteal:hover::before {
+  transform: translate(-0%, 0);
+  opacity: 1;
 }
 
 .text {

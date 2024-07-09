@@ -49,12 +49,12 @@ const JoinTheCommunity = () => {
       <div className="flex items-start flex-col flex-nowrap relative w-full min-w-min justify-start overflow-visible gap-4">
         <div className="flex flex-col sm:flex-row flex-wrap lg:flex-nowrap mt-10 flex-start gap-3 h-min justify-start overflow-visible relative w-full ">
           {/* col 1 */}
-          <div className="gap-3 flex flex-col w-full sm:w-[50%] md:w-[50%] lg:w-1/4">
+          <div className=" gap-3 flex flex-col w-full sm:w-[50%] md:w-[50%] lg:w-1/4">
             {/* row 1 */}
-            <div className="bg-[#232323] rounded-xl p-4">
-              <h1 className="text-5xl font-bold font-roc-grotesk">30+</h1>
-              <p className="text-xl">DC Online Events</p>
-              <p className="mt-5">
+            <div className="to-deepteal h-full bg-[#232323] rounded-xl p-4">
+              <h1 className="text text-5xl font-bold font-roc-grotesk">30+</h1>
+              <p className="text text-xl">DC Online Events</p>
+              <p className="text mt-5">
                 Join our lively Twitter & Instagram sessions, where we invite
                 leading female designers to share their insights on various
                 captivating topics.
@@ -78,7 +78,7 @@ const JoinTheCommunity = () => {
                   target="_blank"
                   href={item.link}
                   key={item.name}
-                  className="bg-[#232323] hover:bg-[#9ADBE5] slide hover:text-black cursor-pointer rounded-2xl h-[100px] flex items-center justify-center"
+                  className="to-deepteal bg-[#232323] hover:bg-[#9ADBE5] hover:text-black cursor-pointer rounded-2xl h-[100px] flex items-center justify-center"
                 >
                   <span className="text"> {item.icon}</span>
                 </a>
@@ -88,14 +88,14 @@ const JoinTheCommunity = () => {
           {/* col 2 */}
           <div className="flex flex-col-reverse gap-3 sm:flex-col w-full sm:w-[50%] md:w-[50%] lg:w-1/4">
             {/* row 1 */}
-            <div className="flex flex-col justify-between bg-[#9ADBE5] rounded-xl p-4 h-full">
-              <div>
+            <div className="to-milk flex flex-col justify-between bg-[#9ADBE5] rounded-xl p-4 h-full">
+              <div className="text">
                 <h1 className="text-5xl font-bold font-roc-grotesk text-black">
                   750+
                 </h1>
                 <p className="text-xl text-black">Community Members</p>
               </div>
-              <p className="mt-14 text-black">
+              <p className="text mt-14 text-black">
                 Design Chics' ultimate goal is to empower women in design to
                 reach their full potential. By fostering a supportive and
                 inspiring environment, the community aims to bridge the gender
@@ -105,9 +105,11 @@ const JoinTheCommunity = () => {
             </div>
             {/* row 2 */}
             <div className="bg-[#232323] rounded-xl p-4">
-              <h1 className="text-5xl font-bold font-roc-grotesk">2200+</h1>
-              <p className="text-xl">Followers</p>
-              <p className="mt-5">Keep up with us on social media</p>
+              <h1 className="text text-5xl font-bold font-roc-grotesk">
+                2200+
+              </h1>
+              <p className="text text-xl">Followers</p>
+              <p className="text mt-5">Keep up with us on social media</p>
             </div>
           </div>
           {/* col 3 */}
@@ -123,15 +125,15 @@ const JoinTheCommunity = () => {
             />
 
             {/* row 2 */}
-            <div className="flex flex-col justify-between bg-[#fff] rounded-xl p-4 h-full">
-              <div>
+            <div className="to-blue flex flex-col justify-between bg-[#fff] rounded-xl p-4 h-full">
+              <div className="text">
                 {" "}
                 <h1 className="text-5xl font-bold font-roc-grotesk text-black">
                   94
                 </h1>
                 <p className="text-xl text-black">Mentees Onboarded</p>
               </div>
-              <p className="mt-14 text-black">
+              <p className="text mt-14 text-black">
                 As a community, we sponsored newbie and junior designers for
                 mentorship program and design courses.
               </p>
@@ -140,14 +142,14 @@ const JoinTheCommunity = () => {
           {/* col 4 */}
           <div className="flex flex-col  gap-3 w-full sm:w-[50%] md:w-[50%] lg:w-1/4">
             {/* row 2 */}
-            <div className="flex flex-col justify-between h-full bg-[#232323] rounded-xl p-4">
-              <div>
-                <h1 className="text-5xl font-bold font-roc-grotesk ">
+            <div className="to-deepteal flex flex-col justify-between h-full bg-[#232323] rounded-xl p-4">
+              <div className="text">
+                <h1 className="text-5xl font-roc-grotesk font-helvetica font-bold">
                   26,278+
                 </h1>
                 <p className="text-xl ">Community Conversations</p>
               </div>
-              <p className="mt-14 ">
+              <p className="text mt-14 ">
                 As a supportive community, we thrive on active communication and
                 networking within the community.
               </p>
@@ -188,7 +190,7 @@ const JoinTheCommunity = () => {
               </span>
             </div>
           </div>
-          <button className="slide bg-[#9ADBE5] h-[56px] rounded-full px-10 text-center text-neutral-950 text-base font-bold font-roc-grotesk uppercase tracking-tight">
+          <button className="to-purple bg-[#9ADBE5] h-[56px] rounded-full px-10 text-center text-neutral-950 text-base font-bold font-roc-grotesk uppercase tracking-tight">
             <span className="text"> Join the community</span>
           </button>
         </div>

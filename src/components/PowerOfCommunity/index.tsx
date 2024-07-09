@@ -74,17 +74,17 @@ const PowerOfCommunity = () => {
               creativity. Different phases in your career?
             </p>
           </div>
-          <button className="relative flex items-center justify-center gap-[8.25px] bg-brandPurple rounded-[515.61px] box-border p-[18px_16px] w-[280px] flex-[0_0_auto] all-unset">
-            <div className="relative text-black font-roc-grotesk  font-helvetica text-[16px] font-bold tracking-[0] mt-[-1.03px] w-fit">
+          <button className="to-blue relative flex items-center justify-center gap-[8.25px] bg-brandPurple rounded-[515.61px] box-border p-[18px_16px] w-[280px] flex-[0_0_auto] all-unset">
+            <div className="text relative text-black font-roc-grotesk  font-helvetica text-[16px] font-bold tracking-[0] mt-[-1.03px] w-fit">
               JOIN THE COMMUNITY
             </div>
           </button>
         </div>
-        <div className="w-full lg:w-1/2 grid grid-cols-1 sm:grid-cols-2 gap-14 mt-10 lg:mt-0">
+        <div className="w-full lg:w-3/4 grid grid-cols-1 sm:grid-cols-2 gap-10 lg:gap-8 mt-10 lg:mt-0">
           {items.map((item, index) => (
             <div
               key={index}
-              className="w-full relative inline-flex flex-col gap-y-10 "
+              className="w-full relative inline-flex flex-col gap-y-10 bg-[#0E0D0D] border border-slate-800 p-5 rounded-[20px]"
             >
               <div className="inline-flex flex-none flex-col gap-y-2 relative">
                 <div className="flex items-center h-12 w-28">
