@@ -7,7 +7,7 @@ const SliderContainer = () => {
   const ref = useRef(null);
   return (
     <div className="flex-col justify-start items-center flex">
-      <div className="w-[1420px] relative">
+      <div className="w-full relative">
         <CommentCarousel ref={ref} />
       </div>
       <SliderControl sliderRef={ref} />

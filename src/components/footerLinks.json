@@ -1,49 +1,49 @@
 [
-	{
-		"id": 1,
-		"title": "Community",
-		"subtitle": [
-			{
-				"id": 1,
-				"title": "Become a member",
-				"href": "/become-a-member"
-			},
-			{
-				"id": 2,
-				"title": "Initiatives",
-				"href": "/initiatives"
-			},
-			{
-				"id": 3,
-				"title": "Events",
-				"href": "/events"
-			},
-			{
-				"id": 4,
-				"title": "Shop Merch",
-				"href": "/shop-merch"
-			}
-		]
-	},
-	{
-		"id": 2,
-		"title": "About Us",
-		"subtitle": [
-			{
-				"id": 1,
-				"title": "Meet the Team",
-				"href": "/meet-the-team"
-			},
-			{
-				"id": 2,
-				"title": "Partner With Us",
-				"href": "/partner-with-ws"
-			},
-			{
-				"id": 3,
-				"title": "Volunteer",
-				"href": "/volunteer"
-			}
-		]
-	}
+  {
+    "id": 1,
+    "title": "Community",
+    "subtitle": [
+      {
+        "id": 1,
+        "title": "Become a member",
+        "href": "/become-a-member"
+      },
+      {
+        "id": 2,
+        "title": "Initiatives",
+        "href": "/initiatives"
+      },
+      {
+        "id": 3,
+        "title": "Events",
+        "href": "/events"
+      },
+      {
+        "id": 4,
+        "title": "Shop Merch",
+        "href": "/shop-merch"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "title": "About Us",
+    "subtitle": [
+      {
+        "id": 1,
+        "title": "Meet the Team",
+        "href": "/meet-the-team"
+      },
+      {
+        "id": 2,
+        "title": "Partner With Us",
+        "href": "/partner-with-ws"
+      },
+      {
+        "id": 3,
+        "title": "Volunteer",
+        "href": "/volunteer"
+      }
+    ]
+  }
 ]

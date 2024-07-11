@@ -41,16 +41,16 @@ const WhyDesignChick = () => {
     },
   ];
   return (
-    <div className=" flex flex-col items-center gap-[60px] bg-[#9adbe5] mx-[10px] rounded-[40px] py-10 lg:p-[120px_0] ">
-      <div className="relative inline-flex flex-col items-center gap-[15px]">
-        <div className="relative text-brandblack font-roc-grotesk text-[40px] lg:text-[46px] font-bold tracking-[0.02px] leading-[50.6px] -mt-[1px] text-center lg:whitespace-nowrap">
+    <div className=" flex flex-col items-center gap-8 md:gap-[60px] bg-[#9adbe5] mx-[10px] rounded-[40px] py-10 lg:p-[120px_0] ">
+      <div className="relative inline-flex flex-col items-center gap-[5px]">
+        <div className="relative text-brandblack font-roc-grotesk text-[28px] md:text-[40px] lg:text-[46px] font-bold tracking-[0.02px] leading-[50.6px] text-center lg:whitespace-nowrap">
           Why Design Chics?
         </div>
-        <p className="text-wrapper-37 relative text-brandblack font-karla text-[16px] lg:text-[20px] font-normal leading-[28px] text-center lg:whitespace-nowrap">
+        <p className="px-8 text-wrapper-37 relative text-brandblack font-karla text-[16px] lg:text-[20px] font-normal leading-[28px] text-center lg:whitespace-nowrap">
           Being a part of Design Chics Community gives you access to:
         </p>
       </div>
-      <div className="container relative grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 justify-between gap-5">
+      <div className="container relative grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 justify-between gap-3 md:gap-5">
         {items.map((item, index) => (
           <div
             key={index}

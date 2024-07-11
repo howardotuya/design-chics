@@ -29,27 +29,27 @@ const JoinTheCommunity = () => {
   return (
     <div className="container mx-auto py-20 lg:py-40">
       <div className="justify-between items-start md:items-center flex flex-col md:flex-row mb-5 md:mb-10">
-        <div className="md:w-[452px]">
-          <span className="text-stone-50 text-6xl font-bold font-roc-grotesk leading-[66px]">
+        <div className="mx-auto md:mx-0  md:w-[452px] text-3xl md:text-6xl ">
+          <span className="text-stone-50  font-bold font-roc-grotesk leading-[66px]">
             The{" "}
           </span>
-          <span className="text-brandBlue text-6xl font-bold font-roc-grotesk leading-[66px]">
+          <span className="text-brandBlue font-bold font-roc-grotesk leading-[66px]">
             community
           </span>
-          <span className="text-stone-50 text-6xl font-bold font-roc-grotesk leading-[66px]">
+          <span className="text-stone-50 font-bold font-roc-grotesk leading-[66px]">
             {" "}
             so far...
           </span>
         </div>
-        <div className="md:w-[333px] text-stone-50/opacity-90 text-xl font-normal font-karla leading-7">
+        <div className="text-center md:text-left md:w-[333px] text-stone-50/opacity-90 text-xl font-normal font-karla leading-7">
           Join our thriving community and tap into the collective knowledge,
           inspiration, and support to amplify your success and creativity.
         </div>
       </div>
       <div className="flex items-start flex-col flex-nowrap relative w-full min-w-min justify-start overflow-visible gap-4">
-        <div className="flex flex-col sm:flex-row flex-wrap lg:flex-nowrap mt-10 flex-start gap-3 h-min justify-start overflow-visible relative w-full ">
+        <div className="flex flex-col  sm:flex-row sm:flex-wrap lg:flex-nowrap mt-10 flex-start gap-3 h-min justify-between overflow-visible relative w-full ">
           {/* col 1 */}
-          <div className=" gap-3 flex flex-col w-full sm:w-[50%] md:w-[50%] lg:w-1/4">
+          <div className="gap-3 flex flex-col w-full sm:w-[49%] md:w-[49%] lg:w-1/4">
             {/* row 1 */}
             <div className="to-deepteal h-full bg-[#232323] rounded-xl p-4">
               <h1 className="text text-5xl font-bold font-roc-grotesk">30+</h1>
@@ -86,7 +86,7 @@ const JoinTheCommunity = () => {
             </div>
           </div>
           {/* col 2 */}
-          <div className="flex flex-col-reverse gap-3 sm:flex-col w-full sm:w-[50%] md:w-[50%] lg:w-1/4">
+          <div className="flex flex-col-reverse gap-3 sm:flex-col w-full sm:w-[49%] md:w-[49%] lg:w-1/4">
             {/* row 1 */}
             <div className="to-milk flex flex-col justify-between bg-[#9ADBE5] rounded-xl p-4 h-full">
               <div className="text">
@@ -113,7 +113,7 @@ const JoinTheCommunity = () => {
             </div>
           </div>
           {/* col 3 */}
-          <div className="flex flex-col gap-3 w-full sm:w-[50%] md:w-[50%] lg:w-1/4">
+          <div className="flex flex-col gap-3 w-full sm:w-[49%] md:w-[49%] lg:w-1/4">
             {/* row 1 */}
             <Image
               unoptimized
@@ -140,7 +140,7 @@ const JoinTheCommunity = () => {
             </div>
           </div>
           {/* col 4 */}
-          <div className="flex flex-col  gap-3 w-full sm:w-[50%] md:w-[50%] lg:w-1/4">
+          <div className="flex flex-col  gap-3 w-full sm:w-[49%] md:w-[49%] lg:w-1/4">
             {/* row 2 */}
             <div className="to-deepteal flex flex-col justify-between h-full bg-[#232323] rounded-xl p-4">
               <div className="text">
@@ -168,7 +168,7 @@ const JoinTheCommunity = () => {
           </div>
         </div>
 
-        <div className="w-full bg-[#232323] rounded-[20px] p-3 gap-3 flex flex-col md:flex-row md:justify-between md:items-center">
+        <div className="w-full bg-[#232323] rounded-[20px] p-3 gap-3 flex flex-col md:flex-row md:justify-between items-center">
           <div className="flex flex-col md:flex-row gap-3 md:items-center">
             <Image
               unoptimized
@@ -190,7 +190,7 @@ const JoinTheCommunity = () => {
               </span>
             </div>
           </div>
-          <button className="to-purple bg-[#9ADBE5] h-[56px] rounded-full px-10 text-center text-neutral-950 text-base font-bold font-roc-grotesk uppercase tracking-tight">
+          <button className="to-purple bg-[#9ADBE5] h-[56px] rounded-full mt-4 md:mt-0 px-10 text-center text-neutral-950 text-base font-bold font-roc-grotesk uppercase tracking-tight">
             <span className="text"> Join the community</span>
           </button>
         </div>

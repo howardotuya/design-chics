@@ -53,11 +53,11 @@ const PowerOfCommunity = () => {
     },
   ];
   return (
-    <div className="my-10 lg:my-40 px-6">
+    <div className="my-10 lg:my-40 px-0">
       <div className="container gap-10 flex flex-col lg:flex-row items-center">
         <div className="w-full lg:w-1/2 flex flex-col gap-10">
-          <div className="relative inline-flex flex-col items-start gap-[10px] flex-[0_0_auto]">
-            <p className="relative text-transparent font-roc-grotesk  font-helvetica text-[40px] lg:text-[46px] font-bold tracking-[0.02px] leading-[50.6px] mt-[-0.99px] md:w-[427px]">
+          <div className="relative inline-flex flex-col items-center md:items-start gap-[10px] flex-[0_0_auto]">
+            <p className="relative text-transparent mx-auto lg:mx-0 font-roc-grotesk text-center lg:text-left font-helvetica text-[40px] lg:text-[46px] font-bold tracking-[0.02px] leading-[50.6px] mt-[-0.99px] md:w-[427px]">
               <span className="text-[#fffcf5e6] tracking-[0.01px]">
                 The power of a{" "}
               </span>
@@ -69,22 +69,29 @@ const PowerOfCommunity = () => {
                 rooting for each other
               </span>
             </p>
-            <p className="relative text-[#bababa] font-karla font-helvetica text-[20px] font-normal leading-[28px] tracking-[0] ">
+            <p className="relative text-center lg:text-left mx-auto lg:mx-0 text-[#bababa] font-karla font-helvetica text-[20px] font-normal leading-[28px] tracking-[0] ">
               We are empowering women through collaboration and <br />{" "}
               creativity. Different phases in your career?
             </p>
           </div>
-          <button className="to-blue relative flex items-center justify-center gap-[8.25px] bg-brandPurple rounded-[515.61px] box-border p-[18px_16px] w-[280px] flex-[0_0_auto] all-unset">
+          <button className="to-blue mx-auto lg:mx-0 relative flex items-center justify-center gap-[8.25px] bg-brandPurple rounded-[515.61px] box-border p-[18px_16px] w-[280px] flex-[0_0_auto] all-unset">
             <div className="text relative text-black font-roc-grotesk  font-helvetica text-[16px] font-bold tracking-[0] mt-[-1.03px] w-fit">
               JOIN THE COMMUNITY
             </div>
           </button>
         </div>
-        <div className="w-full lg:w-3/4 grid grid-cols-1 sm:grid-cols-2 gap-10 lg:gap-8 mt-10 lg:mt-0">
+        <div className="relative w-full lg:w-3/4 grid grid-cols-1 sm:grid-cols-2 gap-10 lg:gap-8 mt-10 lg:mt-0">
+          <Image
+            className=" absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
+            src={"/images/circlebg.svg"}
+            alt=""
+            width={517}
+            height={517}
+          />
           {items.map((item, index) => (
             <div
               key={index}
-              className="w-full relative inline-flex flex-col gap-y-10 bg-[#0E0D0D] border border-slate-800 p-5 rounded-[20px]"
+              className="w-full relative inline-flex flex-col gap-y-10 bg-[#0E0D0D] border-2 border-[#191818] p-5 rounded-[20px]"
             >
               <div className="inline-flex flex-none flex-col gap-y-2 relative">
                 <div className="flex items-center h-12 w-28">

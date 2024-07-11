@@ -12,7 +12,7 @@ import PowerOfCommunity from "@/components/PowerOfCommunity";
 
 const HomePage = () => {
   return (
-    <main className="mt-10 md:mt-44 bg-[#0B0A0A]">
+    <main className="pt-10 md:pt-44 bg-[#0B0A0A]">
       <Hero />
       <Inspire />
       <PowerOfCommunity />

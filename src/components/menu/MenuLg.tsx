@@ -23,7 +23,9 @@ const MenuLg = () => {
             href={link.href}
             key={link.id}
             className={`px-3 py-2  rounded-[100px] justify-center items-center gap-[10.31px] flex ${
-              pathname === link.href ? "bg-neutral-700 font-medium" : ""
+              pathname === link.href
+                ? "bg-neutral-700 font-medium"
+                : "font-normal"
             }`}
           >
             <span className=" h-5 text-center text-stone-50 text-base font-roc-grotesk uppercase tracking-tight">
@@ -33,8 +35,8 @@ const MenuLg = () => {
         ))}
       </div>
       <div className="flex justify-end w-1/5">
-        <button className="to-purple w-[120px] bg-brandBlue rounded-[515.61px] text-center text-neutral-950 text-base py-3 flex items-center justify-center font-bold font-roc-grotesk uppercase tracking-tight">
-          <span className="text">Support Us</span>
+        <button className="to-purple w-[152px] h-[56px] bg-brandBlue rounded-[515.61px] text-neutral-950 font-bold font-roc-grotesk uppercase py-3 leading-none">
+          <span className="text relative top-[2px]">Support Us</span>
         </button>
       </div>
     </div>

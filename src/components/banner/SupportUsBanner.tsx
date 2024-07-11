@@ -69,7 +69,7 @@ const SupportUsBanner = () => {
           height={0}
           className="w-full"
           alt="Vector"
-          src="https://c.animaapp.com/unzonupS/img/491-removebg-2.png"
+          src="/images/happy-ladies.png"
         />
       </div>
     </div>
