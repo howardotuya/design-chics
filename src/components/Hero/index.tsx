@@ -4,7 +4,11 @@ import React from "react";
 const Hero = () => {
   return (
     <div className="space-y-5 max-w-4xl mx-auto px-5 relative">
-      <div className="relative flex justify-center">
+      <div
+        className="relative flex justify-center"
+        data-aos="fade-up"
+        data-aos-mirror="true"
+      >
         <div className="bg-white rounded-full min-h-20 w-20 relative -right-5" />
         <div className="bg-white rounded-full min-h-20 w-20 relative" />
         <div className="bg-white rounded-full min-h-20 w-20 relative -left-5" />
@@ -12,19 +16,32 @@ const Hero = () => {
           750+ MEMBERS
         </p>
       </div>
-      <h1 className="text-[43px] md:text-[86px] font-black font-roc-grotesk text-center leading-tight md:leading-[94.60px]">
+      <h1
+        data-aos-delay="100"
+        data-aos="fade-up"
+        data-aos-mirror="true"
+        className="text-[43px] md:text-[86px] font-black font-roc-grotesk text-center leading-tight md:leading-[94.60px]"
+      >
         Don't go on your <br className="hidden sm:block" />
         <span className="text-brandBlue">design journey</span> alone
       </h1>
       <p
         className="text-lg md:text-2xl text-center text-[#BABABA
 ]"
+        data-aos-delay="150"
+        data-aos="fade-up"
+        data-aos-mirror="true"
       >
         We are providing African women in design with the resources and
         opportunities they need to grow and reach their full potential.
       </p>
 
-      <div className="absolute hidden lg:block top-32 right-0">
+      <div
+        data-aos-delay="250"
+        data-aos="zoom-in"
+        data-aos-mirror="true"
+        className="absolute hidden lg:block top-32 right-0"
+      >
         <div className="absolute top-3 left-6  bg-brandPurple rounded-full inline-flex items-center justify-center gap-2.5 px-5 py-3">
           <div className="relative  text-white font-karla font-helvetica text-sm font-bold leading-5 tracking-normal whitespace-nowrap">
             Design boldly, girl!
