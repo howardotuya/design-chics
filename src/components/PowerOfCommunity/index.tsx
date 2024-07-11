@@ -57,7 +57,11 @@ const PowerOfCommunity = () => {
       <div className="container gap-10 flex flex-col lg:flex-row items-center">
         <div className="w-full lg:w-1/2 flex flex-col gap-10">
           <div className="relative inline-flex flex-col items-center md:items-start gap-[10px] flex-[0_0_auto]">
-            <p className="relative text-transparent mx-auto lg:mx-0 font-roc-grotesk text-center lg:text-left font-helvetica text-[40px] lg:text-[46px] font-bold tracking-[0.02px] leading-[50.6px] mt-[-0.99px] md:w-[427px]">
+            <p
+              data-aos="fade-in"
+              data-aos-mirror="true"
+              className="relative text-transparent mx-auto lg:mx-0 font-roc-grotesk text-center lg:text-left font-helvetica text-[40px] lg:text-[46px] font-bold tracking-[0.02px] leading-[50.6px] mt-[-0.99px] md:w-[427px]"
+            >
               <span className="text-[#fffcf5e6] tracking-[0.01px]">
                 The power of a{" "}
               </span>
@@ -69,18 +73,33 @@ const PowerOfCommunity = () => {
                 rooting for each other
               </span>
             </p>
-            <p className="relative text-center lg:text-left mx-auto lg:mx-0 text-[#bababa] font-karla font-helvetica text-[20px] font-normal leading-[28px] tracking-[0] ">
+            <p
+              data-aos-delay="100"
+              data-aos="fade-in"
+              data-aos-mirror="true"
+              className="relative text-center lg:text-left mx-auto lg:mx-0 text-[#bababa] font-karla font-helvetica text-[20px] font-normal leading-[28px] tracking-[0] "
+            >
               We are empowering women through collaboration and <br />{" "}
               creativity. Different phases in your career?
             </p>
           </div>
-          <button className="to-blue mx-auto lg:mx-0 relative flex items-center justify-center gap-[8.25px] bg-brandPurple rounded-[515.61px] box-border p-[18px_16px] w-[280px] flex-[0_0_auto] all-unset">
+          <button
+            data-aos-delay="200"
+            data-aos="fade-in"
+            data-aos-mirror="true"
+            className="to-blue mx-auto lg:mx-0 relative flex items-center justify-center gap-[8.25px] bg-brandPurple rounded-[515.61px] box-border p-[18px_16px] w-[280px] flex-[0_0_auto] all-unset"
+          >
             <div className="text relative text-black font-roc-grotesk  font-helvetica text-[16px] font-bold tracking-[0] mt-[-1.03px] w-fit">
               JOIN THE COMMUNITY
             </div>
           </button>
         </div>
-        <div className="relative w-full lg:w-3/4 grid grid-cols-1 sm:grid-cols-2 gap-10 lg:gap-8 mt-10 lg:mt-0">
+        <div
+          data-aos-delay="400"
+          data-aos="fade-right"
+          data-aos-mirror="true"
+          className="relative w-full lg:w-3/4 grid grid-cols-1 sm:grid-cols-2 gap-10 lg:gap-8 mt-10 lg:mt-0"
+        >
           <Image
             className=" absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
             src={"/images/circlebg.svg"}

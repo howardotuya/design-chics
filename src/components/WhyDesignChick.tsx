@@ -43,7 +43,11 @@ const WhyDesignChick = () => {
   return (
     <div className=" flex flex-col items-center gap-8 md:gap-[60px] bg-[#9adbe5] mx-[10px] rounded-[40px] py-10 lg:p-[120px_0] ">
       <div className="relative inline-flex flex-col items-center gap-[5px]">
-        <div className="relative text-brandblack font-roc-grotesk text-[28px] md:text-[40px] lg:text-[46px] font-bold tracking-[0.02px] leading-[50.6px] text-center lg:whitespace-nowrap">
+        <div
+          data-aos="fade-up"
+          data-aos-mirror="true"
+          className="relative text-brandblack font-roc-grotesk text-[28px] md:text-[40px] lg:text-[46px] font-bold tracking-[0.02px] leading-[50.6px] text-center lg:whitespace-nowrap"
+        >
           Why Design Chics?
         </div>
         <p className="px-8 text-wrapper-37 relative text-brandblack font-karla text-[16px] lg:text-[20px] font-normal leading-[28px] text-center lg:whitespace-nowrap">
@@ -53,6 +57,9 @@ const WhyDesignChick = () => {
       <div className="container relative grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 justify-between gap-3 md:gap-5">
         {items.map((item, index) => (
           <div
+            data-aos-delay={index + "00"}
+            data-aos="fade-up"
+            data-aos-mirror="true"
             key={index}
             className="relative bg-[#fdf8e8] rounded-[25px] md:h-[182px] overflow-hidden p-5"
           >
