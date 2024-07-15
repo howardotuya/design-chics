@@ -2,14 +2,14 @@ import React from "react";
 
 import SliderContainer from "./SliderContainer";
 
-const HearFromOurCommuniyt = () => {
+const HearFromOurCommunity = () => {
   return (
-    <div className="w-full py-[100px] bg-yellow-50 overflow-x-hidden rounded-[40px] flex-col justify-start items-center gap-[30px] inline-flex">
+    <div className="mx-[10px] py-[100px] bg-yellow-50 overflow-x-hidden rounded-[40px] ">
       <div className="flex-col justify-start items-center gap-[15px] flex">
         <div
-          data-aos="fade-right"
-          data-aos-mirror="true"
-          className="max-w-[708px] text-center text-[28px] md:text-[46px] leading-tight md:leading-[50.60px]"
+          // data-aos="fade-right"
+          // data-aos-mirror="true"
+          className=" text-center text-[28px] md:text-[46px] leading-tight md:leading-[50.60px] my-10"
         >
           <span className="text-neutral-950  font-bold font-roc-grotesk  tracking-tight">
             Hear from{" "}
@@ -29,4 +29,4 @@ const HearFromOurCommuniyt = () => {
   );
 };
 
-export default HearFromOurCommuniyt;
+export default HearFromOurCommunity;

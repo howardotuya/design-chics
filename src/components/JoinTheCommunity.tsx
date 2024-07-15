@@ -27,11 +27,11 @@ const JoinTheCommunity = () => {
     },
   ];
   return (
-    <div className="container mx-auto py-20 lg:py-40">
+    <div className="mx-[10px] px-5  md:px-10 lg:px-20  rounded-[40px] py-20 lg:py-40 bg-[#171717]">
       <div className="justify-between items-start md:items-center flex flex-col md:flex-row mb-5 md:mb-10">
         <div
-          data-aos="fade-up"
-          data-aos-mirror="true"
+          //data-aos="fade-up"
+          //data-aos-mirror="true"
           className="mx-auto md:mx-0  md:w-[452px] text-3xl md:text-6xl "
         >
           <span className="text-stone-50  font-bold font-roc-grotesk leading-[66px]">
@@ -46,10 +46,10 @@ const JoinTheCommunity = () => {
           </span>
         </div>
         <div
-          data-aos-delay="100"
-          data-aos="fade-up"
-          data-aos-mirror="true"
-          className="text-center md:text-left md:w-[333px] text-stone-50/opacity-90 text-xl font-normal font-karla leading-7"
+          //data-aos-delay="100"
+          //data-aos="fade-up"
+          //data-aos-mirror="true"
+          className="text-center md:text-left md:w-[333px] text-[#FFFCF5] text-xl font-normal font-karla leading-7"
         >
           Join our thriving community and tap into the collective knowledge,
           inspiration, and support to amplify your success and creativity.

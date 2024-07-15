@@ -2,6 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+
+@layer utilities {
+  .paused {
+    animation-play-state: paused;
+  }
+}
+
 @font-face {
   font-family: "Roc Grotesk";
   src: url("@/../../../public/fonts/roc-grotesk-font/Roc\ Grotesk\ Regular.ttf")

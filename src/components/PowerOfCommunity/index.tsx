@@ -53,14 +53,14 @@ const PowerOfCommunity = () => {
     },
   ];
   return (
-    <div className="my-10 lg:my-40 px-0">
+    <div className="my-14 lg:my-40 px-0">
       <div className="container gap-10 flex flex-col lg:flex-row items-center">
         <div className="w-full lg:w-1/2 flex flex-col gap-10">
           <div className="relative inline-flex flex-col items-center md:items-start gap-[10px] flex-[0_0_auto]">
             <p
-              data-aos="fade-in"
-              data-aos-mirror="true"
-              className="relative text-transparent mx-auto lg:mx-0 font-roc-grotesk text-center lg:text-left font-helvetica text-[40px] lg:text-[46px] font-bold tracking-[0.02px] leading-[50.6px] mt-[-0.99px] md:w-[427px]"
+              //data-aos="fade-in"
+              //data-aos-mirror="true"
+              className="relative text-transparent mx-auto lg:mx-0 font-roc-grotesk text-center lg:text-left font-helvetica text-[28px] md:text-[40px] lg:text-[46px] font-bold tracking-[0.02px] leading-[33px] md:leading-[44px] lg:leading-[50.6px] mt-[-0.99px] md:w-[427px]"
             >
               <span className="text-[#fffcf5e6] tracking-[0.01px]">
                 The power of a{" "}
@@ -74,19 +74,19 @@ const PowerOfCommunity = () => {
               </span>
             </p>
             <p
-              data-aos-delay="100"
-              data-aos="fade-in"
-              data-aos-mirror="true"
-              className="relative text-center lg:text-left mx-auto lg:mx-0 text-[#bababa] font-karla font-helvetica text-[20px] font-normal leading-[28px] tracking-[0] "
+              //data-aos-delay="100"
+              //data-aos="fade-in"
+              //data-aos-mirror="true"
+              className="relative text-center lg:text-left mx-auto lg:mx-0 text-[#bababa] font-karla font-helvetica text-[16px] font-normal leading-[24px] tracking-[0] "
             >
               We are empowering women through collaboration and <br />{" "}
               creativity. Different phases in your career?
             </p>
           </div>
           <button
-            data-aos-delay="200"
-            data-aos="fade-in"
-            data-aos-mirror="true"
+            //data-aos-delay="200"
+            //data-aos="fade-in"
+            //data-aos-mirror="true"
             className="to-blue mx-auto lg:mx-0 relative flex items-center justify-center gap-[8.25px] bg-brandPurple rounded-[515.61px] box-border p-[18px_16px] w-[280px] flex-[0_0_auto] all-unset"
           >
             <div className="text relative text-black font-roc-grotesk  font-helvetica text-[16px] font-bold tracking-[0] mt-[-1.03px] w-fit">
@@ -95,9 +95,9 @@ const PowerOfCommunity = () => {
           </button>
         </div>
         <div
-          data-aos-delay="400"
-          data-aos="fade-right"
-          data-aos-mirror="true"
+          //data-aos-delay="400"
+          //data-aos="fade-right"
+          //data-aos-mirror="true"
           className="relative w-full lg:w-3/4 grid grid-cols-1 sm:grid-cols-2 gap-10 lg:gap-8 mt-10 lg:mt-0"
         >
           <Image
@@ -120,7 +120,7 @@ const PowerOfCommunity = () => {
                   <div className="relative text-[var(--x-2)] font-roc-grotesk font-helvetica text-[20px] font-bold tracking-[0] leading-[26px] mt-[-1px] whitespace-nowrap">
                     {item.title}
                   </div>
-                  <p className="relative text-[#fffcf5e6] font-karla font-helvetica text-[16px] font-normal leading-[22.4px] h-78">
+                  <p className="relative text-[#FFFCF5] font-karla font-helvetica text-[16px] font-normal leading-[22.4px] h-78">
                     {item.summary}
                   </p>
                 </div>

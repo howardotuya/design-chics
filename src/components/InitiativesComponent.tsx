@@ -53,7 +53,7 @@ const InitiativesComponent = () => {
     },
   ];
   return (
-    <div className="bg-neutral-900 rounded-[40px]">
+    <div className="bg-neutral-900 rounded-[40px] mx-[10px]">
       <div className="container mx-auto m-[10px] py-20 md:py-40 flex-col justify-center items-center gap-20 flex">
         <div className="flex-col justify-start items-center gap-[30px] flex">
           <div className="flex-col justify-start items-center gap-[15px] flex">

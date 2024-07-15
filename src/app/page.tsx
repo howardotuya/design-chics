@@ -7,7 +7,7 @@ import SupportUsBanner from "@/components/banner/SupportUsBanner";
 import Brands from "@/components/Brands";
 import InitiativesComponent from "@/components/InitiativesComponent";
 import JoinTheCommunity from "@/components/JoinTheCommunity";
-import HearFromOurCommuniyt from "@/components/HearFromOurCommunity/HearFromOurCommuniyt";
+
 import Hero from "@/components/Hero";
 import Inspire from "@/components/Inspire";
 import PowerOfCommunity from "@/components/PowerOfCommunity";
@@ -15,6 +15,7 @@ import AOS from "aos";
 
 // import aos styles
 import "aos/dist/aos.css";
+import HearFromOurCommunity from "@/components/HearFromOurCommunity/HearFromOurCommunity";
 
 const HomePage = () => {
   React.useEffect(() => {
@@ -31,7 +32,7 @@ const HomePage = () => {
       <Brands />
       <WhyDesignChick />
       <JoinTheCommunity />
-      <HearFromOurCommuniyt />
+      <HearFromOurCommunity />
       <InitiativesComponent />
       <SupportUsBanner />
     </main>
