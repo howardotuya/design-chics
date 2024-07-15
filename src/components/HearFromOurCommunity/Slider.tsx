@@ -7,7 +7,9 @@ import React from "react";
 import { comments } from "@/data/CommunityDesignersComment";
 import CommunityCard from "../cards/CommunityCard";
 
-const CommentCarousel = React.forwardRef<Slider>((props) => {
+// const ExploreCarousel = forwardRef<Slider, Props>(({ tours }, ref) => {
+const CommentCarousel = React.forwardRef<Slider>((props, ref) => {
+  console.log(ref,'ref')
   const settings = {
     dots: false,
     infinite: true,
@@ -35,7 +37,7 @@ const CommentCarousel = React.forwardRef<Slider>((props) => {
 
   return (
     <div>
-      <Slider  {...settings}>
+      <Slider ref={ref}  {...settings}>
         {comments.map((comment) => (
           <CommunityCard comment={comment} key={comment.id} />
         ))}

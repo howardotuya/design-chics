@@ -50,7 +50,7 @@ const SupportUsBanner = () => {
         <div className=" absolute  top-[38%] left-[9%] md:top-[30%] md:left-[14%] h-[67px] w-[149px] transform rotate-180">
           <div className="h-[62px] relative">
             <div className="absolute top-0 left-[21px] inline-flex items-center justify-center gap-[11.28px] bg-[#9adbe5] rounded-[1409.88px]  p-[5px_20px] lg:p-[14px_20px]">
-              <div className="relative text-brandblack font-karla text-[16px] font-bold leading-[22.4px] -mt-[2.82px] transform rotate-180 whitespace-nowrap">
+              <div className="relative text-brandblack font-karla text-xs font-bold leading-[22.4px] -mt-[2.82px] transform rotate-180 whitespace-nowrap">
                 You GO girl!
               </div>
             </div>

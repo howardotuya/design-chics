@@ -6,8 +6,8 @@ const Hero = () => {
     <div className="space-y-5 max-w-4xl mx-auto px-5 relative mb-28 lg:mb-0">
       <div
         className="relative flex justify-center mt-10 mb-20 md:my-0 lg:my-0"
-      //data-aos="fade-up"
-      //data-aos-mirror="true"
+        data-aos="fade-up"
+        data-aos-mirror="true"
       >
         <div className="bg-[#FDF8E8] rounded-full min-h-16 w-16 md:h-20 md:w-20 relative -right-5" />
         <div className="bg-[#FDF8E8] rounded-full min-h-16 w-16 md:h-20 md:w-20 relative" />
@@ -17,9 +17,9 @@ const Hero = () => {
         </p>
       </div>
       <h1
-        //data-aos-delay="100"
-        //data-aos="fade-up"
-        //data-aos-mirror="true"
+        data-aos-delay="100"
+        data-aos="fade-up"
+        data-aos-mirror="true"
         className="text-[43px] md:text-[86px] font-black font-roc-grotesk text-center leading-tight md:leading-[94.60px]"
       >
         Don't go on your <br className="hidden sm:block" />
@@ -27,18 +27,18 @@ const Hero = () => {
       </h1>
       <p
         className="font-karla text-lg md:text-2xl text-center text-[#BABABA]"
-      //data-aos-delay="150"
-      //data-aos="fade-up"
-      //data-aos-mirror="true"
+        data-aos-delay="150"
+        data-aos="fade-up"
+        data-aos-mirror="true"
       >
         We are providing African women in design with the resources and
         opportunities they need to grow and reach their full potential.
       </p>
 
       <div
-        //data-aos-delay="250"
-        //data-aos="zoom-in"
-        //data-aos-mirror="true"
+        data-aos-delay="250"
+        data-aos="zoom-in"
+        data-aos-mirror="true"
         className="absolute top-14 right-44 md:top-0 lg:top-32 lg:right-0"
       >
         <div className="absolute top-3 left-6  bg-brandPurple rounded-full inline-flex items-center justify-center gap-2.5 px-5 py-2">

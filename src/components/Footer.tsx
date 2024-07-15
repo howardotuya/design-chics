@@ -25,7 +25,7 @@ const Footer = () => {
     },
   ];
   return (
-    <div className="sticky w-full bottom-0 -z-10 mt-auto py-10 md:py-20 bg-yellow-50">
+    <div className=" w-full bottom-0 -z-10 mt-auto py-10 md:py-20 bg-yellow-50">
       <div className="max-w-[1440px] container flex flex-col space-y-20 md:space-y-0 md:flex-row">
         <div className="w-1/2">
           <Image
