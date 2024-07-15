@@ -9,9 +9,9 @@ const Hero = () => {
       //data-aos="fade-up"
       //data-aos-mirror="true"
       >
-        <div className="bg-[#FDF8E8] rounded-full min-h-16 w-16 md:w-20 relative -right-5" />
-        <div className="bg-[#FDF8E8] rounded-full min-h-16 w-16 md:w-20 relative" />
-        <div className="bg-[#FDF8E8] rounded-full min-h-16 w-16 md:w-20 relative -left-5" />
+        <div className="bg-[#FDF8E8] rounded-full min-h-16 w-16 md:h-20 md:w-20 relative -right-5" />
+        <div className="bg-[#FDF8E8] rounded-full min-h-16 w-16 md:h-20 md:w-20 relative" />
+        <div className="bg-[#FDF8E8] rounded-full min-h-16 w-16 md:h-20 md:w-20 relative -left-5" />
         <p className="absolute z-10 text-black font-bold md:text-lg top-[35%]">
           750+ MEMBERS
         </p>

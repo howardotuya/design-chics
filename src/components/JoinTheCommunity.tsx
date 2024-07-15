@@ -113,7 +113,7 @@ const JoinTheCommunity = () => {
               </p>
             </div>
             {/* row 2 */}
-            <div className="bg-[#232323] rounded-xl p-4">
+            <div className="bg-[#232323] rounded-xl p-4 lg:p-10">
               <h1 className="text text-5xl font-bold font-roc-grotesk">
                 2200+
               </h1>

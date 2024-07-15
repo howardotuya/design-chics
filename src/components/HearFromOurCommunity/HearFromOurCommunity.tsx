@@ -1,6 +1,7 @@
 import React from "react";
 
 import SliderContainer from "./SliderContainer";
+import CommentCarousel from "./Slider";
 
 const HearFromOurCommunity = () => {
   return (
@@ -24,7 +25,8 @@ const HearFromOurCommunity = () => {
           </span>
         </div>
       </div>
-      <SliderContainer />
+      <CommentCarousel  />
+      {/* <SliderContainer /> */}
     </div>
   );
 };
