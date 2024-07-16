@@ -6,11 +6,13 @@ import CommentCarousel from "./Slider";
 const SliderContainer = () => {
   const ref = useRef(null);
   return (
-    <div className="flex-col justify-start items-center flex">
+    <div>
       <div >
         <CommentCarousel ref={ref} />
       </div>
-      <SliderControl ref={ref} />
+      <div>
+        <SliderControl sliderRef={ref} />
+      </div>
     </div>
   );
 };

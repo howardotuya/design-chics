@@ -2,6 +2,7 @@ import React from "react";
 
 import SliderContainer from "./SliderContainer";
 import CommentCarousel from "./Slider";
+import SliderControl from "./SliderControl";
 
 const HearFromOurCommunity = () => {
   return (
@@ -13,12 +14,15 @@ const HearFromOurCommunity = () => {
           className=" px-10 text-center text-[28px] md:text-[46px] leading-[33px] md:leading-[50.60px] my-10"
         >
           <span className="text-neutral-950  font-bold font-roc-grotesk  tracking-tight">
-            Hear from  <span className="text-indigo-400"> our community </span> <br/> about Design Chics
+            Hear from  <span className="text-indigo-400"> our community </span> <br /> about Design Chics
           </span>
         </div>
       </div>
-      <CommentCarousel  />
-      {/* <SliderContainer /> */}
+      {/* <div className="flex-col justify-start items-center flex"> */}
+        {/* <CommentCarousel /> */}
+        {/* <SliderControl /> */}
+      {/* </div> */}
+      <SliderContainer />
     </div>
   );
 };
