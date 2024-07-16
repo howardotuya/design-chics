@@ -34,16 +34,9 @@ const JoinTheCommunity = () => {
           //data-aos-mirror="true"
           className="mx-auto md:mx-0  md:w-[452px] text-3xl md:text-6xl "
         >
-          <span className="text-stone-50  font-bold font-roc-grotesk leading-[66px]">
-            The{" "}
-          </span>
-          <span className="text-brandBlue font-bold font-roc-grotesk leading-[66px]">
-            community
-          </span>
-          <span className="text-stone-50 font-bold font-roc-grotesk leading-[66px]">
-            {" "}
-            so far...
-          </span>
+          <p className="text-stone-50  font-bold font-roc-grotesk leading-[40px] md:leading-[60px] text-center md:text-start">
+            The  <span className="text-brandBlue">community </span>so far...
+          </p>
         </div>
         <div
           //data-aos-delay="100"
@@ -81,7 +74,7 @@ const JoinTheCommunity = () => {
               />
             </div>
             {/* row 3 */}
-            <div className="h-full rounded-xl grid grid-cols-2 gap-3">
+            <div className="rounded-xl grid grid-cols-2 gap-3">
               {socials.map((item) => (
                 <a
                   target="_blank"

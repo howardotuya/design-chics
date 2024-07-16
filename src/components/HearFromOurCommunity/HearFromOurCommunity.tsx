@@ -10,18 +10,10 @@ const HearFromOurCommunity = () => {
         <div
           // data-aos="fade-right"
           // data-aos-mirror="true"
-          className=" text-center text-[28px] md:text-[46px] leading-tight md:leading-[50.60px] my-10"
+          className=" text-center text-[28px] md:text-[46px] leading-[33px] md:leading-[50.60px] my-10"
         >
           <span className="text-neutral-950  font-bold font-roc-grotesk  tracking-tight">
-            Hear from{" "}
-          </span>
-          <span className="text-indigo-400 font-bold font-roc-grotesk tracking-tight">
-            our community
-          </span>
-          <br />
-          <span className="text-neutral-950 font-bold font-roc-grotesk tracking-tight">
-            {" "}
-            about Design Chics
+            Hear from  <span className="text-indigo-400"> our community </span> <br/> about Design Chics
           </span>
         </div>
       </div>
