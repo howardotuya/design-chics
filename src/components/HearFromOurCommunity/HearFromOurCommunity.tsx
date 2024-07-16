@@ -1,12 +1,10 @@
 import React from "react";
 
 import SliderContainer from "./SliderContainer";
-import CommentCarousel from "./Slider";
-import SliderControl from "./SliderControl";
 
 const HearFromOurCommunity = () => {
   return (
-    <div className="mx-[10px] py-[100px] bg-yellow-50 overflow-x-hidden rounded-[40px] ">
+    <div className="mx-[10px] py-[100px] bg-yellow-50 overflow-hidden rounded-[40px] ">
       <div className="flex-col justify-start items-center gap-[15px] flex">
         <div
           // data-aos="fade-right"
@@ -18,10 +16,6 @@ const HearFromOurCommunity = () => {
           </span>
         </div>
       </div>
-      {/* <div className="flex-col justify-start items-center flex"> */}
-        {/* <CommentCarousel /> */}
-        {/* <SliderControl /> */}
-      {/* </div> */}
       <SliderContainer />
     </div>
   );

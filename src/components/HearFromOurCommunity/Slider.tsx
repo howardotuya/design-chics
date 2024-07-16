@@ -14,10 +14,10 @@ const CommentCarousel = React.forwardRef<Slider>((props, ref) => {
     arrow: true,
     speed: 2000,
     centerMode: true,
-    centerPadding: "2",
-    // adaptiveHeight: true,
+    centerPadding: "2px",
+    adaptiveHeight: false,
     slidesToShow: 3,
-    slidesToScroll: 1,
+   
     touchThreshold: 1000,
     variableWidth: true,
     autoplay: true,
@@ -34,13 +34,11 @@ const CommentCarousel = React.forwardRef<Slider>((props, ref) => {
   };
 
   return (
-    <div>
-      <Slider ref={ref}  {...settings}>
+      <Slider className="h-[410px] md:h-[400px]" ref={ref}  {...settings}>
         {comments.map((comment) => (
           <CommunityCard comment={comment} key={comment.id} />
         ))}
       </Slider>
-    </div>
   );
 });
 CommentCarousel.displayName = "CommentCarousel";
