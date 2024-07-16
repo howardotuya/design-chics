@@ -24,12 +24,11 @@ const MenuSm = () => {
         </button>
       </div>
       {isDropDownOpen && (
-        <div className="bg-[#232323] top-[70px] absolute -mt-[3px] w-full px-4 py-4 rounded-3xl text-xl">
+        <div className="bg-[#232323] top-[70px] absolute -mt-[3px] w-full px-4 py-4 rounded-3xl text-[14px]">
           {links.map((link) => (
             <Link
-              className={`p-3 block rounded-full ${
-                pathname === link.href ? "font-bold bg-[#2C2C2C]" : "font-thin "
-              } :hover:bg-[#2C2C2C]`}
+              className={`p-3 block rounded-full font-light ${pathname === link.href && " bg-[#2C2C2C] font-semibold"
+                } :hover:bg-[#2C2C2C]`}
               onClick={handleDropDownOpen}
               key={link.id}
               href={link.href}

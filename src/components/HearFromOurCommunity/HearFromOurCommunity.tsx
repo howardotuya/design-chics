@@ -10,7 +10,7 @@ const HearFromOurCommunity = () => {
         <div
           // data-aos="fade-right"
           // data-aos-mirror="true"
-          className=" text-center text-[28px] md:text-[46px] leading-[33px] md:leading-[50.60px] my-10"
+          className=" px-10 text-center text-[28px] md:text-[46px] leading-[33px] md:leading-[50.60px] my-10"
         >
           <span className="text-neutral-950  font-bold font-roc-grotesk  tracking-tight">
             Hear from  <span className="text-indigo-400"> our community </span> <br/> about Design Chics

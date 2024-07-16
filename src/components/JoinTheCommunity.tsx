@@ -106,7 +106,7 @@ const JoinTheCommunity = () => {
               </p>
             </div>
             {/* row 2 */}
-            <div className="bg-[#232323] rounded-xl p-4 lg:p-10">
+            <div className="to-deepteal bg-[#232323] hover:bg-[#9ADBE5] hover:text-black cursor-pointer rounded-xl p-4 lg:p-10">
               <h1 className="text text-5xl font-bold font-roc-grotesk">
                 2200+
               </h1>

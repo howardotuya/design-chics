@@ -53,7 +53,7 @@ const PowerOfCommunity = () => {
     },
   ];
   return (
-    <div className="my-14 lg:my-40 px-0">
+    <div className="my-14 md:my-20 lg:my-40 px-0">
       <div className="container gap-10 flex flex-col lg:flex-row items-center">
         <div className="w-full lg:w-1/2 flex flex-col gap-10">
           <div className="relative inline-flex flex-col items-center md:items-start gap-[10px] flex-[0_0_auto]">
@@ -63,14 +63,7 @@ const PowerOfCommunity = () => {
               className="relative text-transparent mx-auto lg:mx-0 font-roc-grotesk text-center lg:text-left font-helvetica text-[28px] md:text-[40px] lg:text-[46px] font-bold tracking-[0.02px] leading-[33px] md:leading-[44px] lg:leading-[50.6px] mt-[-0.99px] md:w-[427px]"
             >
               <span className="text-[#fffcf5e6] tracking-[0.01px]">
-                The power of a{" "}
-              </span>
-              <span className="text-brandPurple tracking-[0.01px]">
-                community
-              </span>
-              <span className="text-[#fffcf5e6] tracking-[0.01px]">
-                {" "}
-                rooting for each other
+                The power of a <span className="text-brandPurple">community</span> rooting for each other
               </span>
             </p>
             <p

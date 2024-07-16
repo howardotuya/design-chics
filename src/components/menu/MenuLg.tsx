@@ -25,10 +25,10 @@ const MenuLg = () => {
             className={`px-3 py-2  rounded-[100px] justify-center items-center gap-[10.31px] flex ${
               pathname === link.href
                 ? "bg-neutral-700 font-medium"
-                : "font-normal"
+              : "font-normal"
             }`}
           >
-            <span className=" h-5 text-center text-stone-50 text-base font-roc-grotesk uppercase tracking-tight">
+            <span className=" h-5 text-center text-stone-50 text-base uppercase tracking-tight">
               {link.name}
             </span>
           </Link>

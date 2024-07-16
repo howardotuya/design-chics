@@ -11,13 +11,14 @@ import shirtSvg from '../../../public/images/shirt.svg'
 import Image from 'next/image'
 import Pointer from '@/components/Pointer'
 import SupportUsBanner from '@/components/banner/SupportUsBanner'
+import ComingSoon from '@/components/ComingSoon'
 
 
 const Shop = () => {
     return (
         <div >
-            <div className='container'>
-                <div className='my-10 lg:my-20 flex flex-col justify-center items-center relative '>
+             <div className='container'>
+                {/* <div className='my-10 lg:my-20 flex flex-col justify-center items-center relative '>
                     <h1 className='flex flex-col text-[31px] md:text-6xl font-roc-grotesk font-bold  mb-5'>
                         <span>Design Chics Merch:</span>
                         <span>Rep Your Community</span>
@@ -38,9 +39,9 @@ const Shop = () => {
                     subTitlte='Check out cool an amazing customized products curated with love from our community to you.'
                 /> */}
                 {/* list of shopping content */}
-                <div className='mt-10'>
+                {/* <div className='mt-10'> */}
                     {/* start card */}
-                    <div className='grid gap-2 grid-cols-2 grid-rows-2 md:grid-cols-3 md:grid-rows-3 lg:grid-rows-3 lg:grid-cols-auto  justify-evenly'>
+                    {/* <div className='grid gap-2 grid-cols-2 grid-rows-2 md:grid-cols-3 md:grid-rows-3 lg:grid-rows-3 lg:grid-cols-auto  justify-evenly'>
                         {Array.from([1, 2, 3, 4, 5, 6, 7, 8, 9]).map((el, i) => (
                             <Card key={i} className='relative'>
                                 <CardHeader className='p-0 m-2'>
@@ -71,9 +72,10 @@ const Shop = () => {
                             </Card>
                         ))}
                     </div>
-                </div>
+                </div> */} 
                 {/* end of card */}
                 {/* like to support us banner */}
+                <ComingSoon/>
                 <SupportUsBanner />
             </div>
         </div>

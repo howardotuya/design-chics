@@ -11,7 +11,7 @@ const Inspire = () => {
         //data-aos-mirror="true"
         className=" flex justify-center  mt-10 mb-4 md:mt-32"
       >
-        <div className="relative w-[40px] h-[40px] md:w-[77px] md:h-[82px]">
+        <div className="relative w-[40px] h-[40px] md:w-[77px] md:h-[82px] mb-3">
           <Image src="/images/arrowDown.png" alt="" fill={true} />
         </div>
       </div>

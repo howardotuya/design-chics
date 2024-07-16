@@ -8,11 +8,12 @@ import { teams } from '@/data/The_team'
 import { communityAdvocates } from '@/data/advocates'
 import chidinma_about from '@/../public/images/chidinma_about.png'
 import { values } from '@/data/values'
+import ComingSoon from '@/components/ComingSoon'
 
 const aboutUs = () => {
   return (
     <div>
-      <div className='container flex flex-col justify-center gap-5  lg:w-[999px] h-[340px] lg:h-[548px] mx-auto'>
+      {/* <div className='container flex flex-col justify-center gap-5  lg:w-[999px] h-[340px] lg:h-[548px] mx-auto'>
         <h1 className='font-roc-grotesk font-bold text-[40px] leading-[40px] lg:text-[80px] text-center text-[#FDF8E8] lg:leading-[94.6px]'>Daring. <span className='text-brandBlue'>Diverse.</span>  Driven.</h1>
         <p className='font-karla font-normal text-[12px] text-[#BABABA] lg:text-[24px] leading-[17px] lg:leading-[33.6px] text-center'>We are a dynamic community of dedicated female designers who are passionate about creating a more disruptive design world. We believe that design should be inclusive, inspiring, and a powerful tool for positive change.</p>
       </div>
@@ -53,7 +54,7 @@ const aboutUs = () => {
       </div>
       <div className='  py-20'>
         {/* team */}
-        <div className='container'>
+        {/* <div className='container'>
           <div className='flex flex-col lg:flex-row gap-3 justify-between text-[#FFFCF5] '>
             <h1 className='font-roc-grotesk font-bold  text-[40px] lg:text-[60px] leading-[33px] lg:leading-[66px]'>Meet The Team</h1>
             <p className='font-karla text-[20px] leading-[28px] w-full lg:w-[411.1px]'>Meet our remarkable team of dedicated women who pour their hearts and souls into our mission, working tirelessly together to bring our vision to life.</p>
@@ -106,7 +107,8 @@ const aboutUs = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */} 
+      <ComingSoon/>
       <SupportUsBanner />
     </div>
   )

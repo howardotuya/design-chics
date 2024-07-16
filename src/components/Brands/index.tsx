@@ -5,7 +5,7 @@ import Marquee from "react-fast-marquee";
 const Brands = () => {
   return (
 
-    <div className="container mx-auto left-[-1px] flex flex-col items-center gap-10 bg-brandblack p-[100px_0_150px] max-w-[1440px] px-10">
+    <div className=" mx-auto left-[-1px] flex flex-col items-center gap-10 bg-brandblack p-[100px_0_150px] max-w-[1440px]">
       <div className="relative inline-flex flex-col items-center gap-[15px]">
         <p
           //data-aos-delay="100"

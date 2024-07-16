@@ -25,6 +25,9 @@ const config = {
         'roc-grotesk': ['Roc Grotesk', 'sans-serif'],
         'karla': ['Karla', 'sans-serif'], 
       },
+      fontWeight: {
+        thin: "100"
+      },
       colors: {
         brandblack: '#0B0A0A',
         brandGrey: '#393939',
