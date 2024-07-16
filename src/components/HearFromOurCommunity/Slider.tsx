@@ -1,4 +1,3 @@
-"use client";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -7,9 +6,8 @@ import React from "react";
 import { comments } from "@/data/CommunityDesignersComment";
 import CommunityCard from "../cards/CommunityCard";
 
-// const ExploreCarousel = forwardRef<Slider, Props>(({ tours }, ref) => {
 const CommentCarousel = React.forwardRef<Slider>((props, ref) => {
-  console.log(ref,'ref')
+
   const settings = {
     dots: false,
     infinite: true,

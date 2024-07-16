@@ -55,7 +55,7 @@ const Hero = () => {
         />
       </div>
 
-      <div className="h-[62px] left-72 lg:left-40 absolute transform -rotate-180">
+      <div className="h-[62px] right-10 lg:left-40 absolute transform -rotate-180">
         <div className="absolute top-0 left-8 bg-brandGreen rounded-full inline-flex items-center justify-center gap-[11.28px] px-5 py-2">
           <p className="relative text-[#fffcf5] font-karla font-helvetica text-xs font-bold leading-[22.4px] mt-[-2.82px] whitespace-nowrap transform rotate-180 w-fit">
             You can shape the world with your designs

@@ -10,7 +10,7 @@ const SliderContainer = () => {
       <div >
         <CommentCarousel ref={ref} />
       </div>
-      <SliderControl sliderRef={ref} />
+      <SliderControl ref={ref} />
     </div>
   );
 };

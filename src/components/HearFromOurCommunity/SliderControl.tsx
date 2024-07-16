@@ -1,19 +1,19 @@
 import { ChevronLeft, ChevronRight } from 'lucide-react'
 import React from 'react'
 
-const SliderControl = (props: { sliderRef?: any; }) => {
+const SliderControl = (props: { ref?: any; }) => {
     
-    const { sliderRef } = props;
+    const { ref } = props;
     const handlePrevClick = () => {
 
-        if (sliderRef.current) {
-            sliderRef.current.slickPrev();
+        if (ref.current) {
+            ref.current.slickPrev();
         }
     };
 
     const handleNextClick = () => {
-        if (sliderRef.current) {
-            sliderRef.current.slickNext();
+        if (ref.current) {
+            ref.current.slickNext();
         }
     };
     return (
