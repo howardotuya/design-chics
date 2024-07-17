@@ -1,6 +1,7 @@
 import React from "react";
 
 import Image from "next/image";
+import Link from "next/link";
 
 const SupportUsBanner = () => {
   return (
@@ -21,11 +22,11 @@ const SupportUsBanner = () => {
               DONATE
             </span>
           </button>
-          <button className="to-purple bg-[#9adbe5] text-black rounded-full box-border gap-[8.25px] p-[18px_16px] relative w-full lg:w-[280px]">
+          <Link href="https://mail.google.com/mail/u/0/?fs=1&to=info@fordesignchics.com&tf=cm" target="_blank" className="to-purple bg-[#9adbe5] flex items-center justify-center text-black rounded-full box-border gap-[8.25px] p-[18px_16px] relative w-full lg:w-[280px]">
             <span className="text relative   font-roc-grotesk text-[16px] font-bold leading-normal w-fit">
               BECOME A PARTNER
             </span>
-          </button>
+          </Link>
         </div>
       </div>
 

@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 const PowerOfCommunity = () => {
@@ -76,7 +77,7 @@ const PowerOfCommunity = () => {
               creativity. Different phases in your career?
             </p>
           </div>
-          <button
+          <Link href="https://forms.gle/hCViiZDn59eQ5X9r7" target="_blank"
             //data-aos-delay="200"
             //data-aos="fade-in"
             //data-aos-mirror="true"
@@ -85,7 +86,7 @@ const PowerOfCommunity = () => {
             <div className="text relative text-black font-roc-grotesk  font-helvetica text-[16px] font-bold tracking-[0] mt-[-1.03px] w-fit">
               JOIN THE COMMUNITY
             </div>
-          </button>
+          </Link>
         </div>
         <div
           //data-aos-delay="400"

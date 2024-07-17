@@ -5,12 +5,12 @@ import React from 'react'
 const pages = () => {
   return (
     <>
-      
+
       <ComingSoon />
 
-  
-</>
-      
+
+    </>
+
   )
 }
 

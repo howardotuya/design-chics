@@ -13,12 +13,14 @@ const MenuSm = () => {
   return (
     <div className="mx-3 lg:hidden relative">
       <div className="bg-[#232323] flex flex-row justify-between items-center px-4 py-4 rounded-full">
-        <Image
-          src="/svg/LogoLG.svg"
-          alt={"Image Logo"}
-          width={50}
-          height={50}
-        />
+        <Link href="/">
+          <Image
+            src="/svg/LogoLG.svg"
+            alt={"Image Logo"}
+            width={50}
+            height={50}
+          />
+        </Link>
         <button onClick={() => setIsDropDownOpen(!isDropDownOpen)}>
           {isDropDownOpen ? <X /> : <Menu />}
         </button>

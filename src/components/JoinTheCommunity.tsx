@@ -2,28 +2,29 @@ import Image from "next/image";
 import React from "react";
 import { FaXTwitter, FaInstagram, FaLinkedin } from "react-icons/fa6";
 import { BiLogoGmail } from "react-icons/bi";
+import Link from "next/link";
 
 const JoinTheCommunity = () => {
   const socials = [
     {
       name: "twitter",
       icon: <FaXTwitter size={42} />,
-      link: "",
+      link: "https://x.com/designchics",
     },
     {
       name: "instagram",
       icon: <FaInstagram size={42} />,
-      link: "",
+      link: "https://www.instagram.com/designchics_/",
     },
     {
       name: "linkedin",
       icon: <FaLinkedin size={42} />,
-      link: "",
+      link: "https://www.linkedin.com/company/design-chics/",
     },
     {
       name: "gmail",
       icon: <BiLogoGmail size={42} />,
-      link: "",
+      link: "https://mail.google.com/mail/u/0/?fs=1&to=info@fordesignchics.com&tf=cm",
     },
   ];
   return (
@@ -108,13 +109,13 @@ const JoinTheCommunity = () => {
             {/* row 2 */}
             <div className="to-deepteal flex flex-col justify-between sm:h-[310px] bg-[#232323] hover:bg-[#9ADBE5] hover:text-black cursor-pointer rounded-xl p-4 ">
               <div>
-              <h1 className="text text-5xl font-bold font-roc-grotesk">
-                2200+
-              </h1>
+                <h1 className="text text-5xl font-bold font-roc-grotesk">
+                  2200+
+                </h1>
                 <p className="text text-xl">Followers</p>
               </div>
-                <p className="text mt-5">Keep up with us on social media</p>
-             
+              <p className="text mt-5">Keep up with us on social media</p>
+
             </div>
           </div>
           {/* col 3 */}
@@ -195,9 +196,9 @@ const JoinTheCommunity = () => {
               </span>
             </div>
           </div>
-          <button className="to-purple bg-[#9ADBE5] h-[56px] rounded-full mt-4 md:mt-0 px-10 text-center text-neutral-950 text-base font-bold font-roc-grotesk uppercase tracking-tight">
+          <Link href='https://forms.gle/hCViiZDn59eQ5X9r7' target="_blank" className="to-purple flex items-center justify-center bg-[#9ADBE5] h-[56px] rounded-full mt-4 md:mt-0 px-10 text-center text-neutral-950 text-base font-bold font-roc-grotesk uppercase tracking-tight">
             <span className="text"> Join the community</span>
-          </button>
+          </Link>
         </div>
       </div>
     </div>

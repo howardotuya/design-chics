@@ -11,29 +11,31 @@ const Footer = () => {
     {
       name: "Twitter",
       logo: <FaSquareXTwitter size={24} />,
-      link: "",
+      link: "https://x.com/designchics",
     },
     {
       name: "Instagram",
       logo: <FaSquareInstagram size={24} />,
-      link: "",
+      link: "https://www.instagram.com/designchics_/",
     },
     {
       name: "LinkedIn",
       logo: <FaLinkedin size={24} />,
-      link: "",
+      link: "https://www.linkedin.com/company/design-chics/",
     },
   ];
   return (
-    <div className=" w-full bottom-0 -z-10 mt-auto py-10 md:py-20 bg-yellow-50">
+    <div className=" w-full bottom-0  mt-auto py-10 md:py-20 bg-yellow-50">
       <div className="max-w-[1440px] container flex flex-col space-y-20 md:space-y-0 md:flex-row">
         <div className="w-1/2">
+          <Link href='/'>
           <Image
             src="/svg/logo_black.svg"
             alt={"Image Logo"}
             width={77}
             height={46}
-          />
+            />
+          </Link>
         </div>
         <div className="w-full md:w-1/2 justify-start md:justify-center items-start gap-20 flex flex-col sm:flex-row">
           {footerLinks.map((footer) => (
@@ -50,7 +52,7 @@ const Footer = () => {
                   <Link
                     href={subT.href}
                     key={subT.id}
-                    className="text-neutral-950 text-base font-normal font-karla"
+                    className="text-neutral-950 text-base font-normal  font-karla"
                   >
                     {subT.title}
                   </Link>

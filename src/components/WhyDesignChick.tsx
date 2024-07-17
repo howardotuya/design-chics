@@ -28,9 +28,9 @@ const WhyDesignChick = () => {
       icon: "https://c.animaapp.com/unzonupS/img/fi-5602981.svg",
     },
     {
-      title: "UX Roasts",
+      title: "Book Club",
       summary:
-        "Dissect digital products, explore, &amp; brainstorm innovative enhancements.",
+        "Join other designers every week to read, discuss, and learn from inspiring books.",
       icon: "https://c.animaapp.com/unzonupS/img/fi-2344334.svg",
     },
     {

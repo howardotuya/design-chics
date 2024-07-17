@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 const InitiativesComponent = () => {
@@ -99,11 +100,11 @@ const InitiativesComponent = () => {
               </span>
             </div>
           </div>
-          <button className="to-blue w-[280px] px-4 py-[18px] bg-indigo-400 rounded-[515.61px] justify-center items-center gap-[8.25px] inline-flex">
+          <Link href='/initiatives'  className="to-blue w-[280px] px-4 py-[18px] bg-indigo-400 rounded-[515.61px] justify-center items-center gap-[8.25px] inline-flex">
             <span className="text w-[174px] text-center text-neutral-950 text-base font-bold font-roc-grotesk uppercase">
               View All Initiatives
             </span>
-          </button>
+          </Link>
         </div>
         <div className="w-full lg:justify-center gap-[22px] flex flex-col lg:flex-row">
           {items.map((item, index) => (
@@ -124,11 +125,11 @@ const InitiativesComponent = () => {
               </div>
               <div>{item.summary}</div>
               <br />
-              <div
+              <Link href="/learn-more"
                 className={`mt-20 ${item.color} block text-base font-normal font-roc-grotesk uppercase`}
               >
                 Learn more {">"}
-              </div>
+              </Link>
             </div>
           ))}
         </div>
