@@ -41,8 +41,8 @@ const Hero = () => {
         data-aos-mirror="true"
         className="absolute  right-44 md:top-[10%] md:right-[25%] xl:top-32 xl:right-0"
       >
-        <div className="absolute top-3 left-6  bg-brandPurple rounded-full inline-flex items-center justify-center gap-2.5 px-5 py-2">
-          <div className="relative  text-white font-karla font-helvetica text-xs font-bold leading-5 tracking-normal whitespace-nowrap">
+        <div className="absolute top-3 left-6  bg-brandPurple rounded-full inline-flex items-center justify-center gap-2.5 px-5 py-2 md:py-3">
+          <div className="relative  text-white font-karla font-helvetica text-xs lg:text-[14px] font-bold leading-5 tracking-normal whitespace-nowrap">
             Design boldly, girl!
           </div>
         </div>
@@ -55,9 +55,9 @@ const Hero = () => {
         />
       </div>
 
-      <div className="h-[62px] hidden md:block md:left-[45%]  absolute transform -rotate-180">
-        <div className="absolute top-0 left-8 bg-brandGreen rounded-full inline-flex items-center justify-center gap-[11.28px] px-5 py-2">
-          <p className="relative text-[#fffcf5] font-karla font-helvetica text-xs font-bold leading-[22.4px] mt-[-2.82px] whitespace-nowrap transform rotate-180 w-fit">
+      <div className="h-[62px] hidden md:block md:left-[45%] xl:left-[25%]  absolute transform -rotate-180">
+        <div className="absolute top-0 left-8 bg-brandGreen rounded-full inline-flex items-center justify-center gap-[11.28px] px-5 py-2 md:py-3">
+          <p className="relative text-[#fffcf5] font-karla font-helvetica text-xs lg:text-[14px] font-bold leading-[22.4px] mt-[-2.82px] whitespace-nowrap transform rotate-180 w-fit">
             You can shape the world with your designs
           </p>
         </div>

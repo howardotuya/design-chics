@@ -28,11 +28,11 @@ const JoinTheCommunity = () => {
   ];
   return (
     <div className="mx-[10px] px-5  md:px-10 lg:px-20  rounded-[40px] py-20 lg:py-40 bg-[#171717]">
-      <div className="justify-between items-start md:items-center flex flex-col md:flex-row mb-5 md:mb-10">
+      <div className="justify-between items-start md:items-center flex flex-col lg:flex-row mb-5 lg:mb-10">
         <div
           //data-aos="fade-up"
           //data-aos-mirror="true"
-          className="mx-auto md:mx-0  md:w-[452px] text-3xl md:text-6xl "
+          className="mx-auto md:mx-0  lg:w-[452px] text-3xl md:text-6xl "
         >
           <p className="text-stone-50  font-bold font-roc-grotesk leading-[40px] md:leading-[60px] text-center md:text-start">
             The  <span className="text-brandBlue">community </span>so far...
@@ -42,7 +42,7 @@ const JoinTheCommunity = () => {
           //data-aos-delay="100"
           //data-aos="fade-up"
           //data-aos-mirror="true"
-          className="text-center md:text-left md:w-[333px] text-[#FFFCF5] text-xl font-normal font-karla leading-7"
+          className="text-center lg:text-left md:w-[444px] lg:w-[333px] text-[#FFFCF5] text-xl font-normal font-karla leading-7"
         >
           Join our thriving community and tap into the collective knowledge,
           inspiration, and support to amplify your success and creativity.
@@ -51,7 +51,7 @@ const JoinTheCommunity = () => {
       <div className="flex items-start flex-col flex-nowrap relative w-full min-w-min justify-start overflow-visible gap-4">
         <div className="flex flex-col  sm:flex-row sm:flex-wrap lg:flex-nowrap mt-10 flex-start gap-3 h-min justify-between overflow-visible relative w-full ">
           {/* col 1 */}
-          <div className="gap-3 flex flex-col w-full sm:w-[49%] md:w-[49%] lg:w-1/4">
+          <div className="gap-3 flex flex-col w-full sm:w-[49%] md:w-[49%] lg:w-1/4 ">
             {/* row 1 */}
             <div className="to-deepteal h-full bg-[#232323] rounded-xl p-4">
               <h1 className="text text-5xl font-bold font-roc-grotesk">30+</h1>
@@ -74,7 +74,7 @@ const JoinTheCommunity = () => {
               />
             </div>
             {/* row 3 */}
-            <div className="rounded-xl grid grid-cols-2 gap-3">
+            <div className="rounded-xl grid grid-cols-2 gap-3  ">
               {socials.map((item) => (
                 <a
                   target="_blank"
@@ -106,12 +106,15 @@ const JoinTheCommunity = () => {
               </p>
             </div>
             {/* row 2 */}
-            <div className="to-deepteal bg-[#232323] hover:bg-[#9ADBE5] hover:text-black cursor-pointer rounded-xl p-4 lg:p-10">
+            <div className="to-deepteal flex flex-col justify-between sm:h-[310px] bg-[#232323] hover:bg-[#9ADBE5] hover:text-black cursor-pointer rounded-xl p-4 ">
+              <div>
               <h1 className="text text-5xl font-bold font-roc-grotesk">
                 2200+
               </h1>
-              <p className="text text-xl">Followers</p>
-              <p className="text mt-5">Keep up with us on social media</p>
+                <p className="text text-xl">Followers</p>
+              </div>
+                <p className="text mt-5">Keep up with us on social media</p>
+             
             </div>
           </div>
           {/* col 3 */}

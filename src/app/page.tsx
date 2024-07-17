@@ -25,7 +25,7 @@ const HomePage = () => {
     });
   }, []);
   return (
-    <main className="pt-10 md:pt-44 bg-[#0B0A0A]">
+    <main className="pt-10 md:pt-28 bg-[#0B0A0A]">
       <Hero />
       <Inspire />
       <PowerOfCommunity />
