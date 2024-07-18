@@ -15,14 +15,14 @@ const Inspire = () => {
           <Image src="/images/arrowDown.png" alt="" fill={true} />
         </div>
       </div>
-      <div className="container justify-center  gap-[20px] md:gap-[50px] lg:gap-[80px] flex items-center ">
+      <div className="container justify-center  gap-[10px] md:gap-[50px] lg:gap-[80px] flex items-center ">
         <Image
           //data-aos-delay="600"
           //data-aos="fade-left"
           //data-aos-mirror="true"
           width={0}
           height={0}
-          className="w-[90px] h-[100px] md:w-[155px] md:h-[150px] lg:w-[306px] lg:h-[298px]"
+          className="w-[100px] h-[100px] md:w-[155px] md:h-[150px] lg:w-[306px] lg:h-[298px]"
           unoptimized={true}
           alt="Mask group"
           src="https://c.animaapp.com/unzonupS/img/mask-group@2x.png"
@@ -32,7 +32,7 @@ const Inspire = () => {
           //data-aos-delay="350"
           //data-aos="fade-in"
           //data-aos-mirror="true"
-          className="h-[110px] w-[110px] md:h-[150px] md:w-[150px] xl:h-[306px] lg:h-[260px] xl:w-[306px] lg:w-[260px] relative z-10  flex items-center justify-center p-0 bg-brandGreen rounded-full font-roc-grotesk font-helvetica text-[20px] md:text-[33px] lg:text-[50px] font-bold tracking-[-0.51px]"
+          className="h-[110px] w-[110px] md:h-[150px] md:w-[150px] lg:h-[306px] lg:w-[306px] relative z-10  flex items-center justify-center p-0 bg-brandGreen rounded-full font-roc-grotesk font-helvetica text-[20px] md:text-[50px] font-bold tracking-[-0.51px]"
         >
           INSPIRE.
         </div>
@@ -43,7 +43,7 @@ const Inspire = () => {
           //data-aos-mirror="true"
           width={0}
           height={0}
-          className="w-[90px] h-[100px] md:w-[155px] md:h-[150px] lg:w-[306px] lg:h-[298px]"
+          className="w-[103px] h-[100px] md:w-[155px] md:h-[150px] lg:w-[306px] lg:h-[298px]"
           unoptimized={true}
           alt="Mask group"
           src="https://c.animaapp.com/unzonupS/img/mask-group-1@2x.png"

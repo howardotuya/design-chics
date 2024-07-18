@@ -4,8 +4,8 @@ import Marquee from "react-fast-marquee";
 
 const Brands = () => {
   return (
-    // max - w - [1440px]
-    <div className=" mx-auto left-[-1px] flex flex-col items-center gap-10 bg-brandblack p-[100px_0_150px] ">
+
+    <div className=" mx-auto left-[-1px] flex flex-col items-center gap-10 bg-brandblack p-[100px_0_150px] max-w-[1440px]">
       <div className="relative inline-flex flex-col items-center gap-[15px]">
         <p
           //data-aos-delay="100"
@@ -24,7 +24,7 @@ const Brands = () => {
         //data-aos-mirror="true"
         className="relative flex  animate-infinite-scroll space-x-5 overflow-x-hidden"
       > */}
-      <Marquee autoFill gradientWidth={"200px"} speed={70} gradientColor="rgb(248,251,253)"  >
+      <Marquee autoFill gradientWidth={"200px"} speed={70} gradientColor="rgb(248,251,253)" >
         <div className="relative flex items-center justify-center bg-[#fdf8e8] rounded-[60px] mx-[12.5px]  gap-[8px]   overflow-hidden p-[20px_30px] w-[100px] md:w-[150px] h-[50px] md:h-[60px]">
           <Image
             width={84.59}
