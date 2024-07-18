@@ -26,14 +26,14 @@ const Footer = () => {
   ];
   return (
     <div className=" w-full bottom-0  mt-auto py-10 md:py-20 bg-yellow-50">
-      <div className="max-w-[1440px] container flex flex-col space-y-20 md:space-y-0 md:flex-row">
+      <div className="container w-full mx-auto max-w-[1440px] flex flex-col space-y-20 md:space-y-0 md:flex-row">
         <div className="w-1/2">
           <Link href='/'>
-          <Image
-            src="/svg/logo_black.svg"
-            alt={"Image Logo"}
-            width={77}
-            height={46}
+            <Image
+              src="/svg/logo_black.svg"
+              alt={"Image Logo"}
+              width={77}
+              height={46}
             />
           </Link>
         </div>

@@ -54,7 +54,7 @@ const WhyDesignChick = () => {
           Being a part of Design Chics Community gives you access to:
         </p>
       </div>
-      <div className="container relative grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 justify-between gap-3 md:gap-5">
+      <div className="px-[24px] max-w-[1440px] relative grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 justify-between gap-3 md:gap-5">
         {items.map((item, index) => (
           <div
             //data-aos-delay={index + "00"}

@@ -54,8 +54,8 @@ const PowerOfCommunity = () => {
     },
   ];
   return (
-    <div className="my-14 md:my-20 lg:my-40 px-0">
-      <div className="container gap-10 flex flex-col lg:flex-row items-center">
+    <div className="my-14 md:my-20 lg:my-40 px-0 flex justify-center">
+      <div className="px-[24px] max-w-[1440px] gap-10 flex flex-col lg:flex-row items-center">
         <div className="w-full lg:w-1/2 flex flex-col gap-10">
           <div className="relative inline-flex flex-col items-center md:items-start gap-[10px] flex-[0_0_auto]">
             <p

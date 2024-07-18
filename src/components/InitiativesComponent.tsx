@@ -54,8 +54,8 @@ const InitiativesComponent = () => {
     },
   ];
   return (
-    <div className="bg-neutral-900 rounded-[40px] mx-[10px]">
-      <div className="container mx-auto m-[10px] py-20 md:py-40 flex-col justify-center items-center gap-20 flex">
+    <div className="bg-neutral-900 rounded-[40px] mx-[10px] flex items-center justify-center">
+      <div className="px-[24px] max-w-[1440px]  m-[10px] py-20 md:py-40 flex-col justify-center items-center gap-20 flex">
         <div className="flex-col justify-start items-center gap-[30px] flex">
           <div className="flex-col justify-start items-center gap-[15px] flex">
             <div className="max-w-[589px] text-center">

@@ -8,7 +8,7 @@ import links from "./../links.json";
 const MenuLg = () => {
   const pathname = usePathname();
   return (
-    <div className="container w-full lg:flex items-center justify-between hidden">
+    <div className="container w-full mx-auto max-w-[1440px] lg:flex items-center justify-between hidden">
       <div className="w-1/5">
         <Link href="/">
           <Image
