@@ -10,6 +10,7 @@ export const metadata: Metadata = {
   title: "Empowering African Women in Design: Join Our Community",
   description: "Join our community of African women in design to access resources, opportunities, and support for your design journey. We offer insights, skill-building workshops, networking events, and mentorship programs to empower female designers and foster creativity, innovation, and professional growth.",
   openGraph: {
+    locale: 'en_US',
     title: "Empowering African Women in Design: Join Our Community",
     description: "Join our community of African women in design to access resources, opportunities, and support for your design journey. We offer insights, skill-building workshops, networking events, and mentorship programs to empower female designers and foster creativity, innovation, and professional growth.",
     url: "https://www.designchics.com/",
@@ -44,7 +45,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${inter.className} bg-neutral-950 min-h-[100vh] flex flex-col`}
+        className={`${inter.className} bg-neutral-950 min-h-[100vh] flex flex-col max-w-screen-2xl mx-auto`}
       >
         <Header />
         {children}
