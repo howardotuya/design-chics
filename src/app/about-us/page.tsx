@@ -1,6 +1,6 @@
 import Container from "@/components/container/container";
 import React from "react";
-import march8 from "../../../public/images/about/march8.png";
+import march8 from "../../../public/images/about/dinmaa.png";
 import swirl from "../../../public/svg/about/swirl.svg";
 import Image from "next/image";
 
@@ -23,31 +23,34 @@ function Page() {
 
       <Container
         style=""
-        innerStyle="bg-[#171717] w-full pt-[70px] pb-[81px]"
+        innerStyle="bg-[#171717] w-full py-[60px] md:pt-[70px] pb-[81px] px-[18px] md:px-[30px]"
         innerSize="max-w-[1240px]"
       >
-        <div className="flex justify-between gap-[100px] w-full">
-          <div className="flex flex-col gap-[30px] w-full">
-            <h6 className="w-full max-w-[364px] text-[46px] font-bold leading-[120%] tracking-[-0.02px] font-roc-grotesk">
+        <div className="flex flex-col md:flex-row justify-between gap-[30px] lg:gap-[100px] w-full">
+          <div className="flex flex-col items-center md:items-start gap-10 md:gap-4 lg:gap-[30px] w-full">
+            <h6 className="w-full text-center md:text-left max-w-[223px] md:max-w-[364px] text-[28px] md:text-[50px] leading-[110%] lg:text-[46px] font-bold lg:leading-[120%] tracking-[-0.02px] md:tracking-[-1.828px] lg:tracking-[-0.02px] font-roc-grotesk">
               It all started on{" "}
               <span className="text-[#9291EB]">8 March 2023</span>
             </h6>
 
-            <div className="max-w-[551px] h-[469px] relative w-full">
+            <div className="relative w-full grid h-full">
+              <div className="md:max-w-[551px] grid h-[220px] md:h-full overflow-hidden rounded-[20px] relative w-full">
+                <Image
+                  className="object-cover object-[center_top] z-[1] grayscale lg:scale-x-[-1]"
+                  src={march8}
+                  alt=""
+                  fill
+                  quality={100}
+                />
+              </div>
               <Image
-                className="object-cover obejct-center z-[1]"
-                src={march8}
-                alt=""
-                fill
-              />
-              <Image
-                className="absolute z-[2] bottom-[-31px] right-[-55px]"
+                className="w-[54px] md:w-[70px] lg:w-auto h-auto absolute z-[2] bottom-[-27px] md:bottom-[-31px] right-[-1px] md:right-[-25px] lg:right-[-55px]"
                 src={swirl}
                 alt=""
               />
             </div>
           </div>
-          <div className="font-karla w-full max-w-[589px] text-[18px] leading-[160%] text-[rgba(255, 252, 245, 0.80)]">
+          <div className="font-karla w-full max-w-[589px] text-[16px] lg:text-[18px] leading-[160%] text-[rgba(255, 252, 245, 0.80)]">
             <p>
               In the early stages of Dinma Anuigbo&apos;s career, she often
               found herself as the only woman on her design teams. This
