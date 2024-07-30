@@ -9,12 +9,13 @@ import DontGoJourney from '@/components/DontGoJourney/DontGoJourney'
 
 const page = () => {
   return (
-    <main className="pt-10 md:pt-28 bg-[#0B0A0A]">
-      <Hero />
-      <EventComponents />
-      <DontGoJourney/>
-      <SupportUsBanner />
-    </main >
+    <ComingSoon/>
+    // <main className="pt-10 md:pt-28 bg-[#0B0A0A]">
+    //   <Hero />
+    //   <EventComponents />
+    //   <DontGoJourney/>
+    //   <SupportUsBanner />
+    // </main >
   )
 }
 
