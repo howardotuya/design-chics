@@ -4,7 +4,7 @@ import { FcCalendar } from "react-icons/fc";
 
 const EventCard = () => {
     return (
-        <div className=' bg-[#232323] rounded-[25px] p-7 flex items-center'>
+        <div className=' bg-[#232323] rounded-[25px] p-3 md:p-7 flex items-center'>
             <div className='flex gap-3 grow'>
                 <div>
                     <Image src={"/images/portFolioBanner.png"} width={120} height={120} alt="" />
