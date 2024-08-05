@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
 @layer utilities {
   .paused {
     animation-play-state: paused;
@@ -143,6 +142,10 @@ body {
     @apply bg-background text-foreground;
     font-family: "font-karla";
   }
+}
+
+.qrv video {
+  @apply absolute object-cover object-center;
 }
 
 /* to-purple*/

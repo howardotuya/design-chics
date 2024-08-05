@@ -18,6 +18,7 @@ import joinTheCommunity from "../../../public/svg/about/joinTheCommunity.svg";
 import TeamCard from "@/components/about/teamCard";
 import SupportUsBanner from "@/components/banner/SupportUsBanner";
 import AdvocateCard from "@/components/about/advocateCard";
+import VideoPlayer from "@/components/video/ReactPlayer";
 
 function Page() {
   return (
@@ -283,7 +284,8 @@ function Page() {
         <div className="flex flex-col gap-[30px] md:gap-[50px] lg:gap-[80px] w-full">
           <div className="w-full flex flex-col gap-[10px] md:gap-4 lg:flex-row justify-between items-center">
             <h2 className="font-roc-grotesk max-w-[452px] text-[28px] md:text-[40px] lg:text-[60px] lg:text-left text-center font-bold leading-[110%] text-[#9291EB] tracking-[-0.02px] md:tracking-[-1.828px]">
-              <span className="text-[#0B0A0A]">Our</span> Community Advocates
+              <span className="text-[#0B0A0A]">Our</span> Community <br />
+              Advocates
             </h2>
             <p className="font-karla text-[#0B0A0A] max-w-[318px] md:max-w-[444px] lg:max-w-[333px] md:text-[18px] lg:text-[20px] leading-[140%] lg:text-left text-center">
               Meet our community advocates who actively support and work towards
@@ -291,7 +293,7 @@ function Page() {
             </p>
           </div>
 
-          <div className="flex flex-col justify-center items-center overflow-hidden xl:flex-row gap-5 xl:gap-0">
+          <div className="flex flex-col justify-center items-center mx-[unset] md:mx-auto overflow-hidden xl:flex-row gap-5 xl:gap-0">
             <span className="flex ">
               <span className="">
                 <AdvocateCard index={0} name="Ifeoma" />
@@ -322,6 +324,34 @@ function Page() {
       </Container>
 
       {/* 2. Empowered by Design Chics: Hear our member stories */}
+
+      <Container
+        style=""
+        innerStyle="bg-[#9ADBE5] w-full py-[60px] md:py-[80px] lg:py-[120px] px-[18px] md:px-[30px]"
+        innerSize="max-w-[1040px]"
+      >
+        <div className="flex flex-col justify-center items-center gap-[40px] md:gap-[50px] lg:gap-[60px] w-full">
+          <h2 className="text-[#0B0A0A] mx-auto text-center font-roc-grotesk lg:max-w-[657px] md:max-w-[562px] max-w-[283px] text-[28px] md:text-[40px] lg:text-[46px] tracking-[-0.02px] font-bold leading-[110%]">
+            Empowered by Design Chics: Hear our member stories
+          </h2>
+
+          <div className="grid w-full max-w-[250px] md:max-w-[700px] lg:max-w-none md:grid-cols-3 gap-[30px] md:gap-5 lg:gap-10">
+            <div className="qrv relative rounded-[25px] h-[220px] md:h-[193px] lg:h-[282px] grid overflow-hidden">
+              <VideoPlayer url="https://testhowardishungry.000webhostapp.com/sample.webm" />
+            </div>
+            <div className="qrv relative rounded-[25px] h-[220px] md:h-[193px] lg:h-[282px] grid overflow-hidden">
+              <VideoPlayer
+                url={"https://testhowardishungry.000webhostapp.com/sample.webm"}
+              />
+            </div>
+            <div className="qrv relative rounded-[25px] h-[220px] md:h-[193px] lg:h-[282px] grid overflow-hidden">
+              <VideoPlayer
+                url={"https://testhowardishungry.000webhostapp.com/sample.webm"}
+              />
+            </div>
+          </div>
+        </div>
+      </Container>
 
       <Container
         style=""

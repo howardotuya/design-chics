@@ -17,7 +17,7 @@ type AdvocateCardProps = {
 
 function AdvocateCard({ index, name }: AdvocateCardProps) {
   return (
-    <div className="w-[96px] h-[96px] md:w-[180px] md:h-[180px] 2xl:w-[200px] 2xl:h-[200px] rounded-full border-[3px] md:border-[5px] lg:border-[6px] border-[#FFFCF5] relative">
+    <div className="w-[96px] h-[96px] md:w-[180px] md:h-[180px] 2xl:w-[200px] 2xl:h-[200px] pb-4 md:pb-5 lg:pb-6 rounded-full border-[3px] md:border-[5px] lg:border-[6px] border-[#FFFCF5] relative">
       <Image
         className="object-[0_0] object-cover"
         src={assets[index]}
@@ -25,9 +25,9 @@ function AdvocateCard({ index, name }: AdvocateCardProps) {
         fill
       />
 
-      <div className="grid text-center pb-4 md:pb-5 lg:pb-6 h-full relative">
+      <div className="grid text-center h-full relative">
         <div className="mt-auto ">
-          <div className="bg-[#0B0A0A] h-4 md:h-[33px] lg:h-10 w-auto inline-flex flex-col justify-center items-center gap-1 md:gap-0 px-[10px] lg:px-4 py-[6px] rounded-[40px]">
+          <div className="bg-[#0B0A0A] font-roc-grotesk h-4 md:h-[33px] lg:h-10 w-auto inline-flex flex-col justify-center items-center gap-1 md:gap-0 px-[10px] lg:px-4 py-[6px] rounded-[40px]">
             <h4 className="text-[9px] md:text-[12px] lg:text-[14px] leading-[100%] font-bold">
               {name}
             </h4>
