@@ -423,7 +423,7 @@ function Page() {
 
       <Container
         style=""
-        innerStyle="relative bg-[#171717] w-full py-[116px] px-[18px] md:px-[30px]"
+        innerStyle="relative bg-[#171717] w-full  py-[60px] md:py-[80px] lg:py-[120px] px-[18px] md:px-[30px]"
         innerSize="max-w-[1240px]"
       >
         <>
@@ -440,7 +440,7 @@ function Page() {
             </button>
           </div>
           <Image
-            className="object-cover object-center"
+            className="hidden lg:block object-cover object-center"
             src={joinTheCommunity}
             alt=""
             fill
